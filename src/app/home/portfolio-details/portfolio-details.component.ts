@@ -24,7 +24,8 @@ export class PortfolioDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id') as string;
-    console.log('portfolios', this.portfolios);
+    // console.log(this.id);
+    // console.log('portfolios', this.portfolios);
     this.singleProject = this.portfolios.find(
       (portfolio) => portfolio._id.toString() === this.id
     );

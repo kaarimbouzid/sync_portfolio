@@ -125,7 +125,7 @@ export class HomeComponent implements OnInit {
 
   onSubmit() {
     if (this.form.status == 'VALID' && this.honeypot.value == '') {
-      console.log('this.form', this.form.value);
+      // console.log('this.form', this.form.value);
       this.form.disable(); // disable the form if it's valid to disable multiple submissions
       var formData: any = new FormData();
       formData.append('name', this.form.get('name')?.value || '');
