@@ -7,8 +7,7 @@
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-                <nav id="navbar" class="navbar" [class.navbar-mobile]="isMobile && isNavbarActive"
-                        (click)="toggleNavbarClass()">
+                <nav id="navbar" class="navbar" [class.navbar-mobile]="isMobile && isNavbarActive">
                         <ul>
                                 <li>
                                         <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/'}"
@@ -75,7 +74,7 @@
                                 </li>
 
                         </ul>
-                        <i class="bi bi-list mobile-nav-toggle"></i>
+                        <i class="bi bi-list mobile-nav-toggle" (click)="toggleNavbarClass()"></i>
                 </nav><!-- .navbar -->
 
         </div>

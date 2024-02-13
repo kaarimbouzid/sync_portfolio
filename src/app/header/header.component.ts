@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -55,6 +55,7 @@ export class HeaderComponent implements OnInit {
 
   setActiveLink(link: string) {
     this.activeLink = link;
+    this.isNavbarActive = !this.isNavbarActive;
   }
 
   isMobile: boolean = false;

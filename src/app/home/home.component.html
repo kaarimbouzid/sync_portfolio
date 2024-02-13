@@ -25,38 +25,13 @@
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
-        <div class="container">
-
-            <div class="row" data-aos="zoom-in">
-
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="assets/img/clients/trs.png" class="img-fluid" alt="">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="assets/img/clients/printsmarter.png" class="img-fluid" alt="" style="max-width: 80%">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="assets/img/clients/Gazradonquebec_LOGO.png" class="img-fluid" alt="">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="assets/img/clients/SHOTZ_LOGO.png" class="img-fluid" alt="">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="assets/img/clients/kk.png" class="img-fluid" alt="">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="assets/img/clients/creative-cables-logo.jpg" class="img-fluid" alt=""
-                        style="max-width: 80%">
-                </div>
-
-            </div>
-
-        </div>
+        <owl-carousel-o class="slide" [options]="customOptions">
+            <ng-container *ngFor="let slide of images">
+                <ng-template carouselSlide [id]="slide.id">
+                <img class="slide-img-fluid" [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
     </section>
     <!-- End Cliens Section -->
 
@@ -252,7 +227,7 @@
                     <p>{{ 'devis-gratuit-text' | translate }}</p>
                 </div>
                 <div class="col-lg-3 cta-btn-container text-center">
-                    <a class="cta-btn align-middle" href="#contact">{{ 'devis-gratuit' | translate }}</a>
+                    <a class="cta-btn align-middle" href="https://calendly.com/hot-transfere/30min" target="_blank">{{ 'devis-gratuit' | translate }}</a>
                 </div>
             </div>
 

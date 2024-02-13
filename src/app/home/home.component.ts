@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { Portfolio } from '../shared/interfaces/portfolio';
 import { PORTFOLIOS } from '../shared/portfolio';
 import { ProjectsService } from '../shared/services/projects.service';
@@ -8,13 +8,52 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
+
 export class HomeComponent implements OnInit {
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    autoplayHoverPause: true,
+    smartSpeed: 5000,
+    navSpeed: 20,
+    dots: false,
+    nav: false,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      900: {
+        items: 4
+      },
+    },
+  }
+
+  images = [
+    { id:"1", title:"TRS UK", src: 'assets/img/clients/trs.png', alt: 'TRS UK' },
+    { id:"2", title:"Print Smarter", src: 'assets/img/clients/printsmarter.png', alt: 'Print Smarter' },
+    { id:"3", title:"Gazradon Quebec", src: 'assets/img/clients/Gazradonquebec_LOGO.png', alt: 'Gazradon Quebec' },
+    { id:"4", title:"SHOTZ", src: 'assets/img/clients/SHOTZ_LOGO.png', alt: 'SHOTZ' },
+    { id:"5", title:"KlavKarr", src: 'assets/img/clients/kk.png', alt: 'KlavKarr' },
+  ];
+  
   isHeaderScrolled = false;
   portfolios: Portfolio[] = PORTFOLIOS;
   projects: any;
@@ -52,8 +91,8 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  /* The `@HostListener('window:scroll', [])` decorator is used to listen for the scroll event on the
-  window object. When the scroll event is triggered, the `onWindowScroll()` method is called. */
+  // listen for the scroll event on the window object. 
+  // When the scroll event is triggered, the `onWindowScroll()` method is called.
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollY = window.scrollY;
@@ -64,6 +103,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.getProjects();
     this.getCategory();
+    this.customOptions.autoplay = true;
   }
 
   time: boolean = false;
@@ -83,10 +123,7 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  /**
-   * The function `getCategory()` retrieves categories from a service and filters out the category with
-   * id 1.
-   */
+  // retrieves categories from a service and filters out the category with id 1
   getCategory() {
     this.projectService.getCategory().subscribe(
       (data) => {
@@ -101,12 +138,7 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  /**
-   * The function filters a category based on its ID and returns its name.
-   * @param {any} idCategory - The `idCategory` parameter is of type `any`, which means it can accept
-   * any data type.
-   * @returns The name of the category that matches the given idCategory.
-   */
+  // The function filters a category based on its ID and returns its name.
   filterCategory(idCategory: any) {
     for (let i = 0; i < this.allCategories?.length; i++) {
       if (idCategory.includes(this.allCategories[i].id)) {
@@ -115,8 +147,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  /* The `liChange(val: string)` method is used to filter the `projects` array based on the selected
-  category. */
+  // The `liChange(val: string)` method is used to filter the `projects` array based on the selected category.
   iChange(val: string) {
     this.projects2 = this.projects.filter((projet: any) => {
       return projet.categories.includes(val);

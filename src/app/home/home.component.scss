@@ -72,7 +72,9 @@
 }
 
 @media (min-width: 600px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -90,22 +92,19 @@
     }
 }
 
-.slide-animation {
-    animation: slide 3s ease-in-out infinite;
-}
-
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .portfolio {
-        margin: 120px 80px 50px 80px; 
+        margin: 120px 80px 50px 80px;
     }
 
     .article {
-        width: 33.33%; /* Chaque article occupe 33.33% de la largeur */
+        width: 33.33%;
+        /* Chaque article occupe 33.33% de la largeur */
     }
 
     .portfolio-image {
@@ -113,16 +112,17 @@
         height: 400px;
         border-radius: 3px;
     }
-    
+
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     .portfolio {
-        margin: 120px 80px 50px 80px; 
+        margin: 120px 80px 50px 80px;
     }
 
     .article {
-        width: 50%; /* Chaque article occupe 33.33% de la largeur */
+        width: 50%;
+        /* Chaque article occupe 33.33% de la largeur */
     }
 
     .portfolio-image {
@@ -130,16 +130,17 @@
         height: 400px;
         border-radius: 3px;
     }
-    
+
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .portfolio {
-        margin: 120px 80px 50px 80px; 
+        margin: 120px 80px 50px 80px;
     }
 
     .article {
-        width: 100%; /* Chaque article occupe 33.33% de la largeur */
+        width: 100%;
+        /* Chaque article occupe 33.33% de la largeur */
     }
 
     .portfolio-image {
@@ -154,8 +155,31 @@
     cursor: pointer;
     transform: scale(0.95);
     transition: transform 1.5s ease
-  }
+}
 
-  .hidden {
-	display: none
+.hidden {
+    display: none
+}
+
+#clients {
+    height: 20vh;
+}
+
+.slide-img-fluid {
+    width: auto;
+    height: 20vh !important;
+    object-fit: contain;
+    object-position: center;
+}
+
+owl-carousel-o {
+    align-content: center;
+}
+
+owl-carousel-o .owl-stage {
+    transition-timing-function: linear !important;
+}
+
+::ng-deep .owl-item {
+    text-align: center;
 }
