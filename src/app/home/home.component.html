@@ -20,7 +20,6 @@
 
 </section>
 <!-- End Hero -->
-
 <main id="main">
 
     <!-- ======= Clients Section ======= -->
@@ -44,15 +43,16 @@
 
             <div class="row content">
                 <div class="col-lg-6">
-                    <p>
+                    <ng-lottie [options]="aboutUS"></ng-lottie>
+                    <!-- <p>
                         {{ 'best_SYNC_solution' | translate }}
                     </p>
                     <ul>
-                        <!-- <li><i class="ri-check-double-line"></i> {{ 'award_Winning' | translate }}</li> -->
+                    
                         <li><i class="ri-check-double-line"></i> {{ 'professional_Staff' | translate }}</li>
                         <li><i class="ri-check-double-line"></i> {{ '24/7_Support' | translate }} </li>
                         <li><i class="ri-check-double-line"></i> {{ 'fair_Prices' | translate }} </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
                     <p>
@@ -135,8 +135,9 @@
                 </div>
 
                 <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img">
-                    <img src="assets/img/why-us.png" class="img-fluid animated slide-animation" alt="">
-                    &nbsp;
+                    <ng-lottie [options]="whyUs"></ng-lottie>
+                    <!-- <img src="assets/img/why-us.png" class="img-fluid animated slide-animation" alt="">
+                    &nbsp; -->
                 </div>
             </div>
 
@@ -379,6 +380,9 @@
 
             <div class="section-title">
                 <h2>{{ 'asked_questions' | translate }}</h2>
+                <div class="faq_lottie">
+                    <ng-lottie [options]="FAQ"></ng-lottie>
+                </div>
                 <p>{{ 'asked_questions_sub' | translate }}</p>
             </div>
 

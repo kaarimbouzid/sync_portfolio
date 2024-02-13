@@ -9,11 +9,15 @@ import {
   Validators,
 } from '@angular/forms';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { AnimationOptions, LottieComponent } from 'ngx-lottie';
+import { AnimationItem } from 'lottie-web';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  // standalone: true,
+  // imports:[LottieComponent]
 })
 
 export class HomeComponent implements OnInit {
@@ -53,6 +57,10 @@ export class HomeComponent implements OnInit {
     { id:"4", title:"SHOTZ", src: 'assets/img/clients/SHOTZ_LOGO.png', alt: 'SHOTZ' },
     { id:"5", title:"KlavKarr", src: 'assets/img/clients/kk.png', alt: 'KlavKarr' },
   ];
+
+  whyUs: AnimationOptions = {path: './assets/lotties/why_us.json'};
+  FAQ: AnimationOptions = {path: './assets/lotties/FAQ.json'};
+  aboutUS: AnimationOptions = {path: './assets/lotties/about_us.json'};
   
   isHeaderScrolled = false;
   portfolios: Portfolio[] = PORTFOLIOS;

@@ -14,6 +14,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AnimationLoader, LottieComponent, LottieDirective, provideLottieOptions } from 'ngx-lottie';
+import { appConfig } from './app.config';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -34,6 +36,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     CarouselModule,
     BrowserAnimationsModule,
+    LottieComponent,
+    LottieDirective,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -43,6 +47,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
   ],
   providers: [
+    appConfig.providers
     // {
     //   provide: LocationStrategy,
     //   useClass: HashLocationStrategy, // oldOne: PathLocationStrategy
