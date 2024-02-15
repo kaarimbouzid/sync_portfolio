@@ -1,63 +1,111 @@
-/* Stats Section - Home Page
-------------------------------*/
-.stats {
-    --default-color: #ffffff;
-    --default-color-rgb: 255, 255, 255;
-    --background-color: #000000;
-    --background-color-rgb: 0, 0, 0;
-    position: relative;
-    padding: 120px 0;
+// ##############  Hero Section  ##############
+
+// ##############  Clients Section  ##############
+#clients {
+    height: 20vh;
 }
 
-.stats img {
-    position: absolute;
-    inset: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    z-index: 1;
+.slide-img-fluid {
+    width: auto;
+    height: 20vh !important;
+    object-fit: contain;
+    object-position: center;
 }
 
-.stats:before {
-    content: "";
-    background: rgba(var(--background-color-rgb), 0.6);
-    position: absolute;
-    inset: 0;
-    z-index: 2;
+owl-carousel-o {
+    align-content: center;
 }
 
-.stats .container {
-    position: relative;
-    z-index: 3;
+owl-carousel-o .owl-stage {
+    transition-timing-function: linear !important;
 }
 
-.stats .stats-item {
-    padding: 30px;
-    width: 100%;
+::ng-deep .owl-item {
+    text-align: center;
 }
 
-.stats .stats-item span {
-    font-size: 48px;
-    display: block;
-    color: #ffffff;
-    font-weight: 700;
+// ##############  About Us Section  ##############
+.about .aboutus-lottie {
+    width: 50%;
 }
 
-.stats .stats-item p {
-    padding: 0;
-    margin: 0;
-    font-family: var(--heading-font);
-    font-size: 16px;
-    font-weight: 700;
-    color: rgba(var(--default-color-rgb), 0.6);
+.about .content h3 {
+    font-size: 32px;
+    padding-top: 40px;
 }
 
-.team .member .pic img {
-    height: 180px;
+.about .content p:last-child {
+    font-size: 18px;
+    padding-top: 40px;
 }
 
+@media (max-width: 992px) {
+    .about .aboutus-lottie {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .about h3 {
+        font-size: 26px !important;
+        padding-top: 0px !important;
+        padding-left: 30px;
+    }
+
+    .about .aboutus-lottie {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .content p:last-child {
+        font-size: 18px;
+        padding: 40px 20px 10px 20px;
+        text-align: center;
+    }
+}
+
+
+// ##############  Why Us Section  ##############
+.why-us .whyus-lottie {
+    width: 60%;
+}
+
+@media (max-width: 992px) {
+    .why-us .whyus-lottie #why-us-lot {
+        height: 400px !important;
+    }
+
+    .why-us .whyus-lottie {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .why-us .content {
+        padding-left: 20px;
+    }
+
+    .why-us .accordion-list{
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .why-us .whyus-lottie #why-us-lot {
+        height: 400px !important;
+    }
+
+    .why-us .whyus-lottie {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// ##############  Services Section  ##############
 .card {
     background-color: #F3F5FA;
     margin: 1rem;
@@ -77,21 +125,9 @@
     }
 }
 
+// ##############  Cta Section  ##############
 
-@keyframes slide {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
+// ##############  Portfolio Section  ##############
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
@@ -157,31 +193,17 @@
     transition: transform 1.5s ease
 }
 
+
+// ##############  Team Section  ##############
+.team .member .pic img {
+    height: 180px;
+}
+
+// ##############  Frequently Asked Questions Section  ##############
+
+// ##############  Contact Section  ##############
 .hidden {
     display: none
-}
-
-#clients {
-    height: 20vh;
-}
-
-.slide-img-fluid {
-    width: auto;
-    height: 20vh !important;
-    object-fit: contain;
-    object-position: center;
-}
-
-owl-carousel-o {
-    align-content: center;
-}
-
-owl-carousel-o .owl-stage {
-    transition-timing-function: linear !important;
-}
-
-::ng-deep .owl-item {
-    text-align: center;
 }
 
 .map_card {
@@ -190,7 +212,80 @@ owl-carousel-o .owl-stage {
     border: 0;
 }
 
-.faq_lottie{
+.faq_lottie {
     height: 160px;
     width: auto;
 }
+
+
+// ############## TO DELETE  ##############
+
+/* Stats Section - Home Page
+------------------------------*/
+// .stats {
+//     --default-color: #ffffff;
+//     --default-color-rgb: 255, 255, 255;
+//     --background-color: #000000;
+//     --background-color-rgb: 0, 0, 0;
+//     position: relative;
+//     padding: 120px 0;
+// }
+
+// .stats img {
+//     position: absolute;
+//     inset: 0;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     -o-object-fit: cover;
+//     object-fit: cover;
+//     z-index: 1;
+// }
+
+// .stats:before {
+//     content: "";
+//     background: rgba(var(--background-color-rgb), 0.6);
+//     position: absolute;
+//     inset: 0;
+//     z-index: 2;
+// }
+
+// .stats .container {
+//     position: relative;
+//     z-index: 3;
+// }
+
+// .stats .stats-item {
+//     padding: 30px;
+//     width: 100%;
+// }
+
+// .stats .stats-item span {
+//     font-size: 48px;
+//     display: block;
+//     color: #ffffff;
+//     font-weight: 700;
+// }
+
+// .stats .stats-item p {
+//     padding: 0;
+//     margin: 0;
+//     font-family: var(--heading-font);
+//     font-size: 16px;
+//     font-weight: 700;
+//     color: rgba(var(--default-color-rgb), 0.6);
+// }
+
+// @keyframes slide {
+//     0% {
+//         transform: translateY(0);
+//     }
+
+//     50% {
+//         transform: translateY(20px);
+//     }
+
+//     100% {
+//         transform: translateY(0);
+//     }
+// }

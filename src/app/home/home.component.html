@@ -5,12 +5,11 @@
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
                 data-aos="fade-up" data-aos-delay="200">
-                <h1>{{ 'premier_titre' | translate }}
-                </h1>
+                <h1>{{ 'premier_titre' | translate }}</h1>
                 <h2>{{ 'sous_premier_titre' | translate }}</h2>
-                <div class="d-flex justify-content-center justify-content-lg-start">
+                <!-- <div class="d-flex justify-content-center justify-content-lg-start">
                     <a href="#about" class="btn-get-started scrollto">{{ 'get_started' | translate }}</a>
-                </div>
+                </div> -->
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
                 <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
@@ -21,7 +20,6 @@
 </section>
 <!-- End Hero -->
 <main id="main">
-
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
         <owl-carousel-o class="slide" [options]="customOptions">
@@ -42,23 +40,12 @@
             </div>
 
             <div class="row content">
-                <div class="col-lg-6">
+                <div class="aboutus-lottie col-lg-6">
                     <ng-lottie [options]="aboutUS"></ng-lottie>
-                    <!-- <p>
-                        {{ 'best_SYNC_solution' | translate }}
-                    </p>
-                    <ul>
-                    
-                        <li><i class="ri-check-double-line"></i> {{ 'professional_Staff' | translate }}</li>
-                        <li><i class="ri-check-double-line"></i> {{ '24/7_Support' | translate }} </li>
-                        <li><i class="ri-check-double-line"></i> {{ 'fair_Prices' | translate }} </li>
-                    </ul> -->
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
-                    <p>
-                        {{ 'linking_service' | translate }}
-                    </p>
-                    <!-- <a href="#" class="btn-learn-more">{{ 'learn_More' | translate }}</a> -->
+                    <h3>SYNC your partner in digital</h3>
+                    <p>{{ 'linking_service' | translate }}</p>
                 </div>
             </div>
         </div>
@@ -69,7 +56,7 @@
     <section id="why-us" class="why-us section-bg">
         <div class="container-fluid" data-aos="fade-up">
             <div class="row">
-                <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
                     <div class="content">
                         <h3><strong>{{ 'Why_choose_us' | translate }}</strong></h3>
                         <p>{{ 'Why_choose_us_sub' | translate }}</p>
@@ -131,13 +118,11 @@
 
                         </ul>
                     </div>
-
                 </div>
 
-                <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img">
-                    <ng-lottie [options]="whyUs"></ng-lottie>
-                    <!-- <img src="assets/img/why-us.png" class="img-fluid animated slide-animation" alt="">
-                    &nbsp; -->
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch order-1 order-lg-2 whyus-lottie">
+                    <ng-lottie id="why-us-lot" [options]="whyUs"></ng-lottie>
+                    <!-- <img src="assets/img/why-us.png" class="img-fluid animated slide-animation" alt=""> &nbsp; -->
                 </div>
             </div>
 
