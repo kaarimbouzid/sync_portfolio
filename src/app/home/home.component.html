@@ -55,12 +55,12 @@
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
         <div class="container-fluid" data-aos="fade-up">
+            <div class="section-title">
+                <h2>{{ 'Why_choose_us' | translate }}</h2>
+                <h4>{{ 'Why_choose_us_sub' | translate }}</h4>
+            </div>
             <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-                    <div class="content">
-                        <h3><strong>{{ 'Why_choose_us' | translate }}</strong></h3>
-                        <p>{{ 'Why_choose_us_sub' | translate }}</p>
-                    </div>
+                <div class="d-flex flex-column justify-content-center align-items-end  order-2 order-lg-1 why-us-list"> 
                     <div class="accordion-list">
                         <ul>
                             <li>
@@ -119,10 +119,8 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch order-1 order-lg-2 whyus-lottie">
+                <div class="d-flex flex-column justify-content-center align-items-start order-1 order-lg-2 whyus-lottie">
                     <ng-lottie id="why-us-lot" [options]="whyUs"></ng-lottie>
-                    <!-- <img src="assets/img/why-us.png" class="img-fluid animated slide-animation" alt=""> &nbsp; -->
                 </div>
             </div>
 
@@ -149,8 +147,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in"
-                        data-aos-delay="200">
+                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-display"></i></div>
                             <h4><a href="">{{ 'Web_Development' | translate }}</a></h4>
@@ -159,8 +156,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in"
-                        data-aos-delay="300">
+                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-plugin"></i></div>
                             <h4><a href="">{{ 'plugins_on_demand' | translate }}</a></h4>
@@ -169,8 +165,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in"
-                        data-aos-delay="400">
+                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-envelope-fill"></i></div>
                             <h4><a href="">{{ 'CMS_development' | translate }}</a></h4>
@@ -179,8 +174,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in"
-                        data-aos-delay="300">
+                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-phone-fill"></i></div>
                             <h4><a href="">{{ 'App_Development' | translate }}</a></h4>
@@ -189,8 +183,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in"
-                        data-aos-delay="200">
+                    <div class="col-xl col-md d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-badge-ad-fill"></i></div>
                             <h4><a href="">{{ 'Campaigns_marketing' | translate }}</a></h4>

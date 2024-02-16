@@ -69,13 +69,34 @@ owl-carousel-o .owl-stage {
 
 
 // ##############  Why Us Section  ##############
+.why-us .why-us-list {
+    width: 50%;
+}
+
+.why-us .accordion-list {
+    width: 740px;
+}
+
+.why-us .whyus-lottie #why-us-lot {
+    height: 600px;
+}
+
 .why-us .whyus-lottie {
-    width: 60%;
+    width: 50%;
+    display: flex;
+    // justify-content: center;
+}
+
+@media (max-width: 1300px) {
+    .why-us .accordion-list {
+        width: auto;
+    }
 }
 
 @media (max-width: 992px) {
     .why-us .whyus-lottie #why-us-lot {
-        height: 400px !important;
+        // height: 500px !important;
+        width: 100%;
     }
 
     .why-us .whyus-lottie {
@@ -88,7 +109,12 @@ owl-carousel-o .owl-stage {
         padding-left: 20px;
     }
 
+    .why-us .why-us-list {
+        width: 100%;
+    }
+
     .why-us .accordion-list{
+        width: 100%;
         padding: 0px 20px;
     }
 }
@@ -108,12 +134,12 @@ owl-carousel-o .owl-stage {
 // ##############  Services Section  ##############
 .card {
     background-color: #F3F5FA;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     border: none;
 }
 
 .cards {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
     gap: 1rem;

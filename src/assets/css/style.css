@@ -1335,7 +1335,7 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-list {
-  padding: 0 100px;
+  padding: 0;
 }
 
 .faq .faq-list ul {
