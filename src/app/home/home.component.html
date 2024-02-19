@@ -230,8 +230,17 @@
                 <li data-filter=".filter-web">Web</li>
             </ul>
 
-            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+            <div class="row">
+				<div class="col-md-3 mb-3 text-center col-padding animate-box" *ngFor="let projet of portfolios">
+					<a routerLink="portfolio-details/{{ projet._id }}" class="work" style="background-image: url({{projet.image}});">
+						<div class="desc">
+							<h3>{{ projet.title }}</h3>
+							<span>{{ projet.category }}</span>
+						</div>
+					</a>
+				</div>
+			</div>
+            <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
                 <div *ngFor="let projet of portfolios"
                     [ngClass]="'col-lg-4 col-md-6 portfolio-item ' + 'filter-' + projet.category.toLowerCase()">
                     <a routerLink="portfolio-details/{{ projet._id }}">
@@ -250,9 +259,7 @@
                         </div>
                     </a>
                 </div>
-
-            </div>
-
+            </div> -->
         </div>
     </section> 
     
