@@ -25,6 +25,7 @@ import { CtaSectionComponent } from './home/cta-section/cta-section.component';
 import { PortfolioSectionComponent } from './home/portfolio-section/portfolio-section.component';
 import { TeamSectionComponent } from './home/team-section/team-section.component';
 import { FAQSectionComponent } from './home/faq-section/faq-section.component';
+import { ContactSectionComponent } from './home/contact-section/contact-section.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -44,7 +45,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     CtaSectionComponent,
     PortfolioSectionComponent,
     TeamSectionComponent,
-    FAQSectionComponent
+    FAQSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,
