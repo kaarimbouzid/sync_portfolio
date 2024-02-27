@@ -1,27 +1,41 @@
 // ##############  Hero Section  ##############
 
 // ##############  Clients Section  ##############
-#clients {
-    height: 20vh;
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.slide-img-fluid {
-    width: auto;
-    height: 20vh !important;
-    object-fit: contain;
-    object-position: center;
+.image-list {
+    display: inline-block;
+    animation: slide 10s linear infinite;
 }
 
-owl-carousel-o {
-    align-content: center;
+.image-container img {
+    width: 150px;
+    height: auto;
+    margin-right: 100px;
+    filter: grayscale(100);
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
 }
 
-owl-carousel-o .owl-stage {
-    transition-timing-function: linear !important;
-}
+.image-container img:hover {
+    filter: none;
+    transform: scale(1.1);
+  }
 
-::ng-deep .owl-item {
-    text-align: center;
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 // ##############  About Us Section  ##############
@@ -174,7 +188,12 @@ owl-carousel-o .owl-stage {
 #portfolio {
     padding: 3em 0;
 }
-
+.cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
 // .portfolio .fh5co-heading h2 {
 //     font-size: 18px;
 //     color: #fff;

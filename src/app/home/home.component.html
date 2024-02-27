@@ -1,35 +1,18 @@
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-                data-aos="fade-up" data-aos-delay="200">
-                <h1>{{ 'premier_titre' | translate }}</h1>
-                <h2>{{ 'sous_premier_titre' | translate }}</h2>
-                <!-- <div class="d-flex justify-content-center justify-content-lg-start">
-                    <a href="#about" class="btn-get-started scrollto">{{ 'get_started' | translate }}</a>
-                </div> -->
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-            </div>
-        </div>
-    </div>
-
-</section>
+<div class="first-section">
+    <hero-section></hero-section>
+</div>
 <!-- End Hero -->
 <main id="main">
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-        <owl-carousel-o class="slide" [options]="customOptions">
-            <ng-container *ngFor="let slide of images">
-                <ng-template carouselSlide [id]="slide.id">
-                <img class="slide-img-fluid" [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
-                </ng-template>
-            </ng-container>
-        </owl-carousel-o>
-    </section>
+    <div id="clients" class="clients section-bg">
+        <div class="image-container" style="padding: 0 200px 0 200px;">
+            <div class="image-list">
+                <img *ngFor="let slide of images" [src]="slide.src" [alt]="slide.alt">
+                <img *ngFor="let slide of images" [src]="slide.src" [alt]="slide.alt">
+            </div> 
+        </div>
+    </div> 
     <!-- End Cliens Section -->
 
     <!-- ======= About Us Section ======= -->
@@ -129,7 +112,7 @@
     <!-- End Why Us Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <section id="services" class="services section-bg" style="background-color: #fff;">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h2>{{ 'services' | translate }}</h2>
@@ -230,7 +213,7 @@
                 <li data-filter=".filter-web">Web</li>
             </ul>
 
-            <div class="row">
+            <!-- <div class="row cards_container">
 				<div class="col-md-3 mb-3 text-center col-padding animate-box" *ngFor="let projet of portfolios">
 					<a routerLink="portfolio-details/{{ projet._id }}" class="work" style="background-image: url({{projet.image}});">
 						<div class="desc">
@@ -239,8 +222,8 @@
 						</div>
 					</a>
 				</div>
-			</div>
-            <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+			</div> -->
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
                 <div *ngFor="let projet of portfolios"
                     [ngClass]="'col-lg-4 col-md-6 portfolio-item ' + 'filter-' + projet.category.toLowerCase()">
                     <a routerLink="portfolio-details/{{ projet._id }}">
@@ -259,7 +242,7 @@
                         </div>
                     </a>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section> 
     

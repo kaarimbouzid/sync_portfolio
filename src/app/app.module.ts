@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AnimationLoader, LottieComponent, LottieDirective, provideLottieOptions } from 'ngx-lottie';
 import { appConfig } from './app.config';
+import { HomeModule } from './home/home.module';
+import { HeroSectionComponent } from './home/hero-section/hero-section.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -27,6 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     FooterComponent,
     PortfolioDetailsComponent,
+    HeroSectionComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserAnimationsModule,
     LottieComponent,
     LottieDirective,
+    HomeModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
