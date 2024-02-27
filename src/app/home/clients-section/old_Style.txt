@@ -1,0 +1,70 @@
+Client Carrousel:
+
+############# HTML ############# 
+
+<!-- <owl-carousel-o class="slide" [options]="customOptions">
+	<ng-container *ngFor="let slide of images">
+		<ng-template carouselSlide [id]="slide.id">
+			<img class="slide-img-fluid" [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+		</ng-template>
+	</ng-container>
+</owl-carousel-o> -->
+
+############# CSS ############# 
+
+// #clients {
+//     height: 20vh;
+// }
+
+// .slide-img-fluid {
+//     width: auto;
+//     height: 20vh !important;
+//     object-fit: contain;
+//     object-position: center;
+// }
+
+// owl-carousel-o {
+//     align-content: center;
+// }
+
+// owl-carousel-o .owl-stage {
+//     transition-timing-function: linear !important;
+// }
+
+// ::ng-deep .owl-item {
+//     text-align: center;
+// }
+
+############# TS ############# 
+
+customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    autoplayHoverPause: true,
+    smartSpeed: 5000,
+    navSpeed: 20,
+    dots: false,
+    nav: false,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      900: {
+        items: 4
+      },
+    },
+  }
+  
+  
+  

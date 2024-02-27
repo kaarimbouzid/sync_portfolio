@@ -18,6 +18,7 @@ import { AnimationLoader, LottieComponent, LottieDirective, provideLottieOptions
 import { appConfig } from './app.config';
 import { HomeModule } from './home/home.module';
 import { HeroSectionComponent } from './home/hero-section/hero-section.component';
+import { ClientsSectionComponent } from './home/clients-section/clients-section.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,6 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     PortfolioDetailsComponent,
     HeroSectionComponent,
+    ClientsSectionComponent
   ],
   imports: [
     BrowserModule,

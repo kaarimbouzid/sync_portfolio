@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Portfolio } from '../shared/interfaces/portfolio';
 import { PORTFOLIOS } from '../shared/portfolio';
 import { ProjectsService } from '../shared/services/projects.service';
@@ -8,9 +8,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
-import { OwlOptions } from 'ngx-owl-carousel-o';
-import { AnimationOptions, LottieComponent } from 'ngx-lottie';
-import { AnimationItem } from 'lottie-web';
+import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-home',
@@ -21,43 +19,6 @@ import { AnimationItem } from 'lottie-web';
 })
 
 export class HomeComponent implements OnInit {
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    autoplayHoverPause: true,
-    smartSpeed: 5000,
-    navSpeed: 20,
-    dots: false,
-    nav: false,
-    navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      900: {
-        items: 4
-      },
-    },
-  }
-
-  images = [
-    { id:"1", title:"TRS UK", src: 'assets/img/clients/trs.png', alt: 'TRS UK' },
-    { id:"2", title:"Print Smarter", src: 'assets/img/clients/printsmarter.png', alt: 'Print Smarter' },
-    { id:"3", title:"Gazradon Quebec", src: 'assets/img/clients/Gazradonquebec_LOGO.png', alt: 'Gazradon Quebec' },
-    { id:"4", title:"SHOTZ", src: 'assets/img/clients/SHOTZ_LOGO.png', alt: 'SHOTZ' },
-    { id:"5", title:"KlavKarr", src: 'assets/img/clients/kk.png', alt: 'KlavKarr' },
-  ];
-
   whyUs: AnimationOptions = {path: './assets/lotties/why_us.json'};
   FAQ: AnimationOptions = {path: './assets/lotties/FAQ.json'};
   aboutUS: AnimationOptions = {path: './assets/lotties/about_us.json'};
@@ -111,7 +72,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.getProjects();
     this.getCategory();
-    this.customOptions.autoplay = true;
   }
 
   time: boolean = false;

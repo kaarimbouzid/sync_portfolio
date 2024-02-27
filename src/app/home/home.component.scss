@@ -1,42 +1,6 @@
 // ##############  Hero Section  ##############
 
 // ##############  Clients Section  ##############
-.image-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.image-list {
-    display: inline-block;
-    animation: slide 10s linear infinite;
-}
-
-.image-container img {
-    width: 150px;
-    height: auto;
-    margin-right: 100px;
-    filter: grayscale(100);
-    transition: all 0.4s ease-in-out;
-    display: inline-block;
-    padding: 15px 0;
-}
-
-.image-container img:hover {
-    filter: none;
-    transform: scale(1.1);
-  }
-
-@keyframes slide {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
 
 // ##############  About Us Section  ##############
 .about .aboutus-lottie {
