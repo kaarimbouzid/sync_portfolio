@@ -21,6 +21,7 @@ import { ClientsSectionComponent } from './home/clients-section/clients-section.
 import { AboutUsSectionComponent } from './home/about-us-section/about-us-section.component';
 import { WhyUsSectionComponent } from './home/why-us-section/why-us-section.component';
 import { ServicesSectionComponent } from './home/services-section/services-section.component';
+import { CtaSectionComponent } from './home/cta-section/cta-section.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -36,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ClientsSectionComponent,
     AboutUsSectionComponent,
     WhyUsSectionComponent,
-    ServicesSectionComponent
+    ServicesSectionComponent,
+    CtaSectionComponent
   ],
   imports: [
     BrowserModule,
