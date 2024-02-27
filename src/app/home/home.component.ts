@@ -21,7 +21,6 @@ import { AnimationOptions } from 'ngx-lottie';
 export class HomeComponent implements OnInit {
   whyUs: AnimationOptions = {path: './assets/lotties/why_us.json'};
   FAQ: AnimationOptions = {path: './assets/lotties/FAQ.json'};
-  aboutUS: AnimationOptions = {path: './assets/lotties/about_us.json'};
   
   isHeaderScrolled = false;
   portfolios: Portfolio[] = PORTFOLIOS;

@@ -3,48 +3,6 @@
 // ##############  Clients Section  ##############
 
 // ##############  About Us Section  ##############
-.about .aboutus-lottie {
-    width: 50%;
-}
-
-.about .content h3 {
-    font-size: 32px;
-    padding-top: 40px;
-}
-
-.about .content p:last-child {
-    font-size: 18px;
-    padding-top: 40px;
-}
-
-@media (max-width: 992px) {
-    .about .aboutus-lottie {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 575px) {
-    .about h3 {
-        font-size: 26px !important;
-        padding-top: 0px !important;
-        padding-left: 30px;
-    }
-
-    .about .aboutus-lottie {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .about .content p:last-child {
-        font-size: 18px;
-        padding: 40px 20px 10px 20px;
-        text-align: center;
-    }
-}
-
 
 // ##############  Why Us Section  ##############
 .why-us .why-us-list {
