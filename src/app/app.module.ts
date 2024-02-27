@@ -23,6 +23,7 @@ import { WhyUsSectionComponent } from './home/why-us-section/why-us-section.comp
 import { ServicesSectionComponent } from './home/services-section/services-section.component';
 import { CtaSectionComponent } from './home/cta-section/cta-section.component';
 import { PortfolioSectionComponent } from './home/portfolio-section/portfolio-section.component';
+import { TeamSectionComponent } from './home/team-section/team-section.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -40,7 +41,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     WhyUsSectionComponent,
     ServicesSectionComponent,
     CtaSectionComponent,
-    PortfolioSectionComponent
+    PortfolioSectionComponent,
+    TeamSectionComponent,
   ],
   imports: [
     BrowserModule,
