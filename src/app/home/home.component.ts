@@ -22,7 +22,6 @@ export class HomeComponent implements OnInit {
   FAQ: AnimationOptions = {path: './assets/lotties/FAQ.json'};
   
   isHeaderScrolled = false;
-  portfolios: Portfolio[] = PORTFOLIOS;
   projects: any;
   projects2: any;
   allCategories: any;
