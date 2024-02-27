@@ -19,7 +19,6 @@ import { AnimationOptions } from 'ngx-lottie';
 })
 
 export class HomeComponent implements OnInit {
-  FAQ: AnimationOptions = {path: './assets/lotties/FAQ.json'};
   
   isHeaderScrolled = false;
   projects: any;
