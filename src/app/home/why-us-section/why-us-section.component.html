@@ -1,0 +1,69 @@
+<section id="why-us" class="why-us section-bg">
+    <div class="container-fluid" data-aos="fade-up">
+        <div class="section-title">
+            <h2>{{ 'Why_choose_us' | translate }}</h2>
+            <h4>{{ 'Why_choose_us_sub' | translate }}</h4>
+        </div>
+        <div class="row">
+            <div class="d-flex flex-column justify-content-center align-items-end  order-2 order-lg-1 why-us-list">
+                <div class="accordion-list">
+                    <ul>
+                        <li>
+                            <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">
+                                <span>01</span> {{ 'expertise' | translate }}
+                                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                            </a>
+                            <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                                <p>{{ 'expertise_desc' | translate }}</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">
+                                <span>02</span> {{ 'custom_solutions' | translate }}
+                                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                            </a>
+                            <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                                <p>{{ 'custom_solutions_desc' | translate }}</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">
+                                <span>03</span> {{ 'innovation' | translate }}
+                                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                            </a>
+                            <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                                <p> {{ 'innovation_desc' | translate }} </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed">
+                                <span>04</span> {{ 'scalability' | translate }}
+                                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                            </a>
+                            <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                                <p>{{ 'scalability_desc' | translate }}</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed">
+                                <span>05</span> {{ 'client_satisfaction' | translate }}
+                                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                            </a>
+                            <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
+                                <p>{{ 'client_satisfaction_desc' | translate }}</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-start order-1 order-lg-2 whyus-lottie">
+                <ng-lottie id="why-us-lot" [options]="whyUs"></ng-lottie>
+            </div>
+        </div>
+    </div>
+</section>

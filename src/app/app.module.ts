@@ -10,16 +10,16 @@ import { PortfolioDetailsComponent } from './home/portfolio-details/portfolio-de
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { AnimationLoader, LottieComponent, LottieDirective, provideLottieOptions } from 'ngx-lottie';
+import { LottieComponent, LottieDirective } from 'ngx-lottie';
 import { appConfig } from './app.config';
 import { HomeModule } from './home/home.module';
 import { HeroSectionComponent } from './home/hero-section/hero-section.component';
 import { ClientsSectionComponent } from './home/clients-section/clients-section.component';
 import { AboutUsSectionComponent } from './home/about-us-section/about-us-section.component';
+import { WhyUsSectionComponent } from './home/why-us-section/why-us-section.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -33,7 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PortfolioDetailsComponent,
     HeroSectionComponent,
     ClientsSectionComponent,
-    AboutUsSectionComponent
+    AboutUsSectionComponent,
+    WhyUsSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -63,4 +64,4 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

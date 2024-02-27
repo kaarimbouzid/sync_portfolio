@@ -5,67 +5,6 @@
 // ##############  About Us Section  ##############
 
 // ##############  Why Us Section  ##############
-.why-us .why-us-list {
-    width: 50%;
-}
-
-.why-us .accordion-list {
-    width: 740px;
-}
-
-.why-us .whyus-lottie #why-us-lot {
-    height: 600px;
-}
-
-.why-us .whyus-lottie {
-    width: 50%;
-    display: flex;
-    // justify-content: center;
-}
-
-@media (max-width: 1300px) {
-    .why-us .accordion-list {
-        width: auto;
-    }
-}
-
-@media (max-width: 992px) {
-    .why-us .whyus-lottie #why-us-lot {
-        // height: 500px !important;
-        width: 100%;
-    }
-
-    .why-us .whyus-lottie {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .why-us .content {
-        padding-left: 20px;
-    }
-
-    .why-us .why-us-list {
-        width: 100%;
-    }
-
-    .why-us .accordion-list {
-        width: 100%;
-        padding: 0px 20px;
-    }
-}
-
-@media (max-width: 575px) {
-    .why-us .whyus-lottie #why-us-lot {
-        height: 400px !important;
-    }
-
-    .why-us .whyus-lottie {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-}
 
 // ##############  Services Section  ##############
 .card {
