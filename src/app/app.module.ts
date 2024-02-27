@@ -20,6 +20,7 @@ import { HeroSectionComponent } from './home/hero-section/hero-section.component
 import { ClientsSectionComponent } from './home/clients-section/clients-section.component';
 import { AboutUsSectionComponent } from './home/about-us-section/about-us-section.component';
 import { WhyUsSectionComponent } from './home/why-us-section/why-us-section.component';
+import { ServicesSectionComponent } from './home/services-section/services-section.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -34,7 +35,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeroSectionComponent,
     ClientsSectionComponent,
     AboutUsSectionComponent,
-    WhyUsSectionComponent
+    WhyUsSectionComponent,
+    ServicesSectionComponent
   ],
   imports: [
     BrowserModule,
