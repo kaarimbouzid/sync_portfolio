@@ -1,18 +1,140 @@
-.card {
-    background-color: #F3F5FA;
-    margin: 1rem 0 1rem 0;
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+// .row {padding: 15px 0 15px 0; }
+
+.seperator {
+    margin-bottom: 30px;
+    width: 35px;
+    height: 3px;
+    background: #777;
     border: none;
 }
 
-.cards {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
+.item {
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 1px;
+    float: left;
+    // -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .item-in {
+        background: #F3F5FA;
+        padding: 40px;
+        position: relative;
+        border-radius: 15px 15px 0 0;
+        height: 100%;
+
+
+        &:hover:before {
+            width: 100%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            height: 2px;
+            width: 0%;
+            background: #333333;
+            right: 0px;
+            -webkit-transition: width 0.4s;
+            transition: width 0.4s;
+        }
+    }
 }
 
-@media (min-width: 600px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
+.item {
+
+    h4 {
+        font-size: 18px;
+        margin-top: 25px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    i {
+        padding-right: 10px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #666666;
+        margin-top: 10px;
+
+        i {
+            opacity: 0;
+            padding-left: 0px;
+            transition: 0.4s;
+            font-size: 24px;
+            display: inline-block;
+            top: 5px;
+            position: relative;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            i {
+                padding-left: 10px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.item .icon {
+    // position: absolute;
+    // top: 27px;
+    // left: -16px;
+    cursor: pointer;
+
+    a {
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #999;
+        text-transform: none;
+    }
+
+    svg {
+        width: 32px;
+        height: 32px;
+        float: left;
+    }
+
+    .icon-topic {
+        opacity: 0;
+        padding-left: 0px;
+        transition: 0.4s;
+        display: inline-block;
+        top: 0px;
+        position: relative;
+    }
+
+    &:hover .icon-topic {
+        opacity: 1;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .item .icon {
+        position: relative;
+        top: 0;
+        left: 0;
     }
 }
