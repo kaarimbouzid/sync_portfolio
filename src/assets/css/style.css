@@ -115,7 +115,15 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  /* background: rgba(40, 58, 90, 0.9); */
+  background: rgb(41, 44, 69, 0.9);
+  box-shadow:
+    3.4px 3.4px 2.7px rgba(0, 0, 0, 0.025),
+    8.7px 8.7px 6.9px rgba(0, 0, 0, 0.035),
+    17.7px 17.7px 14.2px rgba(0, 0, 0, 0.045),
+    36.5px 36.5px 29.2px rgba(0, 0, 0, 0.055),
+    100px 100px 80px rgba(0, 0, 0, 0.08)
+  ;
 }
 
 #header .logo {
