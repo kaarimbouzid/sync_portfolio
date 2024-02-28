@@ -42,6 +42,12 @@
                                                 {{ 'contact' | translate }}
                                         </a>
                                 </li>
+                                <li class="hide-in-mobile">
+                                        <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#contact'}"
+                                                (click)="setActiveLink('/#contact')" href="/#contact">
+                                                {{ 'contact' | translate }}
+                                        </a>
+                                </li>
                                 <li class="dropdown">
                                         <a href="#">
                                                 <span>{{ 'langue' | translate }}</span>
@@ -68,10 +74,13 @@
                                                 </li>
                                         </ul>
                                 </li>
-                                <li>
+                                <!-- <li>
                                         <a class="cta-btn align-middle" href="https://calendly.com/hot-transfere/30min" target="_blank">
                                                 {{'devis-gratuit' | translate }}
                                         </a>
+                                </li> -->
+                                <li class="hide-in-mobile">
+                                        <button class="button-background-move" role="button">{{'devis-gratuit' | translate }}</button>
                                 </li>
 
                         </ul>

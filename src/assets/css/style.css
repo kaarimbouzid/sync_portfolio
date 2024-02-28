@@ -213,7 +213,8 @@ h6 {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
+  /* left: 14px; */
+  right: 10px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;

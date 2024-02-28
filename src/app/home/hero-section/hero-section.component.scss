@@ -106,7 +106,7 @@
 }
 
 .stone:nth-child(3) {
-	top: 500px;
+	top: 60vh;
 	left: 100px;
 	box-shadow: 0 4px 70px;
 	// transition: transform 0.5s ease;
@@ -195,6 +195,34 @@
 
 .stone:nth-child(7):hover {
 	transform: rotate(360deg);
+}
+
+.stone:nth-child(8) {
+	top: 85vh;
+	left: 200px;
+	box-shadow: 0 4px 70px;
+	background: url("../../../assets/logos/react.png");
+	transition: transform 0.5s ease;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	animation: fadeInLeft 1s ease-in-out, up-down 1s ease-in-out infinite alternate-reverse both;
+	z-index: 2;
+	opacity: 1;
+}
+
+.stone:nth-child(9) {
+	top: 85vh;
+	right: 300px;
+	box-shadow: 0 4px 70px;
+	background: url("../../../assets/logos/shopware.png");
+	transition: transform 0.5s ease;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	animation: fadeInLeft 1s ease-in-out, up-down 1s ease-in-out infinite alternate-reverse both;
+	z-index: 2;
+	opacity: 1;
 }
 
 // .stone:nth-child(even) {

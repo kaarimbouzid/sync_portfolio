@@ -26,6 +26,7 @@ import { PortfolioSectionComponent } from './home/portfolio-section/portfolio-se
 import { TeamSectionComponent } from './home/team-section/team-section.component';
 import { FAQSectionComponent } from './home/faq-section/faq-section.component';
 import { ContactSectionComponent } from './home/contact-section/contact-section.component';
+import { TrustBoxSectionComponent } from './home/trust-box-section/trust-box-section.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -46,7 +47,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PortfolioSectionComponent,
     TeamSectionComponent,
     FAQSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    TrustBoxSectionComponent
   ],
   imports: [
     BrowserModule,
