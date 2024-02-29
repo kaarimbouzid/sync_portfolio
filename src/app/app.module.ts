@@ -26,6 +26,7 @@ import { TeamSectionComponent } from './home/team-section/team-section.component
 import { FAQSectionComponent } from './home/faq-section/faq-section.component';
 import { ContactSectionComponent } from './home/contact-section/contact-section.component';
 import { TrustBoxSectionComponent } from './home/trust-box-section/trust-box-section.component';
+import { WebServiceIntegrationComponent } from './web-service-integration/web-service-integration.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -47,7 +48,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     TeamSectionComponent,
     FAQSectionComponent,
     ContactSectionComponent,
-    TrustBoxSectionComponent
+    TrustBoxSectionComponent,
+    WebServiceIntegrationComponent
   ],
   imports: [
     BrowserModule,
