@@ -29,6 +29,7 @@ import { TrustBoxSectionComponent } from './home/trust-box-section/trust-box-sec
 import { WebServiceIntegrationComponent } from './web-service-integration/web-service-integration.component';
 import { WebDevComponent } from './web-dev/web-dev.component';
 import { PluginsOnDemandComponent } from './plugins-on-demand/plugins-on-demand.component';
+import { CmsDevComponent } from './cms-dev/cms-dev.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -53,7 +54,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     TrustBoxSectionComponent,
     WebServiceIntegrationComponent,
     WebDevComponent,
-    PluginsOnDemandComponent
+    PluginsOnDemandComponent,
+    CmsDevComponent
   ],
   imports: [
     BrowserModule,

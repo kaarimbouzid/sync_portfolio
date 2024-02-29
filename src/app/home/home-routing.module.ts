@@ -5,6 +5,7 @@ import { PortfolioDetailsComponent } from './portfolio-details/portfolio-details
 import { WebServiceIntegrationComponent } from '../web-service-integration/web-service-integration.component';
 import { WebDevComponent } from '../web-dev/web-dev.component';
 import { PluginsOnDemandComponent } from '../plugins-on-demand/plugins-on-demand.component';
+import { CmsDevComponent } from '../cms-dev/cms-dev.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
       {
         path: 'plugins-on-demand',
         component: PluginsOnDemandComponent,
+      },
+      {
+        path: 'cms-development',
+        component: CmsDevComponent,
       },
     ],
   },
