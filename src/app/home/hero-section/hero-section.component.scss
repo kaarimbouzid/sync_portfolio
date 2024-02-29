@@ -10,16 +10,17 @@
 
 .banner-text {
 	margin: 0 auto;
+	max-width: 70vw;
 }
 
 // Titles
 .banner h1 {
-	padding-top: 1vh;
-	font-size: 40px !important;
+	// padding-top: 1vh;
+	font-size: 34px !important;
 	font-weight: 400;
 	font-family: "Anta", sans-serif;
 	position: relative;
-	top: 40px;
+	top: 30px;
 }
 
 .banner h4 {
@@ -32,7 +33,7 @@
 	text-decoration: none;
 	text-transform: none;
 	position: relative;
-	top: 60px;
+	top: 40px;
 }
 
 .animate-charcter {
@@ -62,7 +63,7 @@
 
 // Lottie Image
 .dev-lottie {
-	height: 85vh;
+	height: 83vh;
 	z-index: 9999;
 }
 
@@ -287,6 +288,11 @@
 
 	100% {
 		transform: translateY(10px);
+	}
+}
+@media (max-width: 600px) {
+	.dev-lottie {
+		height: auto;
 	}
 }
 
