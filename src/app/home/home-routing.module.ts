@@ -6,6 +6,7 @@ import { WebServiceIntegrationComponent } from '../web-service-integration/web-s
 import { WebDevComponent } from '../web-dev/web-dev.component';
 import { PluginsOnDemandComponent } from '../plugins-on-demand/plugins-on-demand.component';
 import { CmsDevComponent } from '../cms-dev/cms-dev.component';
+import { MobileDevComponent } from '../mobile-dev/mobile-dev.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
       {
         path: 'cms-development',
         component: CmsDevComponent,
+      },
+      {
+        path: 'mobile-development',
+        component: MobileDevComponent,
       },
     ],
   },

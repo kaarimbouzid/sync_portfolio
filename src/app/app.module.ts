@@ -30,6 +30,7 @@ import { WebServiceIntegrationComponent } from './web-service-integration/web-se
 import { WebDevComponent } from './web-dev/web-dev.component';
 import { PluginsOnDemandComponent } from './plugins-on-demand/plugins-on-demand.component';
 import { CmsDevComponent } from './cms-dev/cms-dev.component';
+import { MobileDevComponent } from './mobile-dev/mobile-dev.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -55,7 +56,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     WebServiceIntegrationComponent,
     WebDevComponent,
     PluginsOnDemandComponent,
-    CmsDevComponent
+    CmsDevComponent,
+    MobileDevComponent
   ],
   imports: [
     BrowserModule,
