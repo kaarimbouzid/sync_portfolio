@@ -13,8 +13,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { LottieComponent, LottieDirective } from 'ngx-lottie';
-import { appConfig } from './app.config';
+import { LottieComponent, LottieDirective, provideLottieOptions } from 'ngx-lottie'; 
 import { HomeModule } from './home/home.module';
 import { HeroSectionComponent } from './home/hero-section/hero-section.component';
 import { ClientsSectionComponent } from './home/clients-section/clients-section.component';
@@ -70,7 +69,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
   ],
   providers: [
-    appConfig.providers
+    provideLottieOptions({
+      player: () => import('lottie-web'),
+    }),
     // {
     //   provide: LocationStrategy,
     //   useClass: HashLocationStrategy, // oldOne: PathLocationStrategy
