@@ -23,7 +23,8 @@ export class HeaderComponent implements OnInit {
         // Vérifie si la nouvelle route est différente de '/'
         if (this.currentUrl.startsWith('/portfolio-details')) {
           // Si oui, ajoute la classe 'header-inner-pages'
-          this.isHeader = true;
+          // this.isHeader = true;
+          this.isHeader = false;
         } else {
           // Sinon, retire la classe 'header-inner-pages'
           this.isHeader = false;
@@ -54,12 +55,28 @@ export class HeaderComponent implements OnInit {
   activeLink: string = '/';
 
   setActiveLink(link: string) {
-    this.activeLink = link;
-    this.isNavbarActive = !this.isNavbarActive;
+    if (link == "/") {
+      this.activeLink = link;
+      this.isNavbarActive = !this.isNavbarActive;
+      window.scroll({ 
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
+    }else{
+      if (this.currentUrl != "/") {
+        this.router.navigate(['/']);
+        this.activeLink = link;
+        this.isNavbarActive = !this.isNavbarActive;
+      }else{
+        this.activeLink = link;
+        this.isNavbarActive = !this.isNavbarActive;
+      }
+    }
   }
 
   isMobile: boolean = false;
-  mediaQueryList = window.matchMedia('(max-width: 1200px)');
+  mediaQueryList = window.matchMedia('(max-width: 990px)');
 
   ngOnInit() {
     // Ajoutez un écouteur pour détecter les changements d'état mobile

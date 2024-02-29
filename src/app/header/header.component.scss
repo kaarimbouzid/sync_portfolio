@@ -57,8 +57,37 @@
   left: 0px;
 }
 
+.hide-languages {
+  display: none;
+}
+
+.navbar a span,
+.navbar a i {
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .button-background-move {
     padding: 13px 50px 13px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hide-contact {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+
+  // .mobile-nav-toggle {
+  //   display: block;
+  // }
+  .hide-in-mobile {
+    display: none;
+  }
+
+  .hide-languages {
+    display: block;
   }
 }
