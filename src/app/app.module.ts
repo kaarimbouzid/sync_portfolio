@@ -27,6 +27,7 @@ import { FAQSectionComponent } from './home/faq-section/faq-section.component';
 import { ContactSectionComponent } from './home/contact-section/contact-section.component';
 import { TrustBoxSectionComponent } from './home/trust-box-section/trust-box-section.component';
 import { WebServiceIntegrationComponent } from './web-service-integration/web-service-integration.component';
+import { WebDevComponent } from './web-dev/web-dev.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -49,7 +50,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FAQSectionComponent,
     ContactSectionComponent,
     TrustBoxSectionComponent,
-    WebServiceIntegrationComponent
+    WebServiceIntegrationComponent,
+    WebDevComponent
   ],
   imports: [
     BrowserModule,

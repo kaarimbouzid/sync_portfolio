@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { PortfolioDetailsComponent } from './portfolio-details/portfolio-details.component';
 import { WebServiceIntegrationComponent } from '../web-service-integration/web-service-integration.component';
+import { WebDevComponent } from '../web-dev/web-dev.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
       {
         path: 'web-service-integration',
         component: WebServiceIntegrationComponent,
+      },
+      {
+        path: 'web-development',
+        component: WebDevComponent,
       },
     ],
   },
