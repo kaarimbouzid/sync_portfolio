@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { PortfolioDetailsComponent } from './portfolio-details/portfolio-details.component';
 import { WebServiceIntegrationComponent } from '../web-service-integration/web-service-integration.component';
 import { WebDevComponent } from '../web-dev/web-dev.component';
+import { PluginsOnDemandComponent } from '../plugins-on-demand/plugins-on-demand.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
       {
         path: 'web-development',
         component: WebDevComponent,
+      },
+      {
+        path: 'plugins-on-demand',
+        component: PluginsOnDemandComponent,
       },
     ],
   },
