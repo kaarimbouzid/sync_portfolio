@@ -9,6 +9,7 @@ import { CmsDevComponent } from '../cms-dev/cms-dev.component';
 import { MobileDevComponent } from '../mobile-dev/mobile-dev.component';
 import { SeoCampaignsMarketingComponent } from '../seo-campaigns-marketing/seo-campaigns-marketing.component';
 import { PrivacyComponent } from '../privacy/privacy.component';
+import { TermsConditionComponent } from '../terms-condition/terms-condition.component';
 
 const routes: Routes = [
   {
@@ -49,6 +50,10 @@ const routes: Routes = [
       {
         path: 'privacy',
         component: PrivacyComponent,
+      },
+      {
+        path: 'terms-and-conditions',
+        component: TermsConditionComponent,
       },
     ],
   },

@@ -33,6 +33,7 @@ import { CmsDevComponent } from './cms-dev/cms-dev.component';
 import { MobileDevComponent } from './mobile-dev/mobile-dev.component';
 import { SeoCampaignsMarketingComponent } from './seo-campaigns-marketing/seo-campaigns-marketing.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -61,7 +62,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     CmsDevComponent,
     MobileDevComponent,
     SeoCampaignsMarketingComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    TermsConditionComponent
   ],
   imports: [
     BrowserModule,
