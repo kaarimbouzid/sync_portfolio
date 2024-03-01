@@ -56,7 +56,7 @@ export class HeaderComponent implements OnInit {
 
   setActiveLink(link: string) {
     if (link == "/") {
-      this.activeLink = link;
+      // this.activeLink = link;
       this.isNavbarActive = !this.isNavbarActive;
       window.scroll({ 
         top: 0, 
@@ -66,10 +66,10 @@ export class HeaderComponent implements OnInit {
     }else{
       if (this.currentUrl != "/") {
         this.router.navigate(['/']);
-        this.activeLink = link;
+        // this.activeLink = link;
         this.isNavbarActive = !this.isNavbarActive;
       }else{
-        this.activeLink = link;
+        // this.activeLink = link;
         this.isNavbarActive = !this.isNavbarActive;
       }
     }
