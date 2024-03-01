@@ -8,6 +8,7 @@ import { PluginsOnDemandComponent } from '../plugins-on-demand/plugins-on-demand
 import { CmsDevComponent } from '../cms-dev/cms-dev.component';
 import { MobileDevComponent } from '../mobile-dev/mobile-dev.component';
 import { SeoCampaignsMarketingComponent } from '../seo-campaigns-marketing/seo-campaigns-marketing.component';
+import { PrivacyComponent } from '../privacy/privacy.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
       {
         path: 'seo-campaigns-marketing',
         component: SeoCampaignsMarketingComponent,
+      },
+      {
+        path: 'privacy',
+        component: PrivacyComponent,
       },
     ],
   },
