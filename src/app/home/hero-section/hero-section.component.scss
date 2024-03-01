@@ -15,7 +15,6 @@
 
 // Titles
 .banner h1 {
-	// padding-top: 1vh;
 	font-size: 34px !important;
 	font-weight: 400;
 	font-family: "Anta", sans-serif;
@@ -24,7 +23,6 @@
 }
 
 .banner h4 {
-	// padding-top: 2vh;
 	font-size: 18px;
 	font-weight: 600;
 	font-family: "Anta", sans-serif;
@@ -37,7 +35,6 @@
 }
 
 .animate-charcter {
-	//    text-transform: uppercase;
 	background-image: linear-gradient(-225deg,
 			#63adf2 0%,
 			#82a0bc 29%,
@@ -74,19 +71,6 @@
 	height: 50px;
 	border-radius: 50px;
 	z-index: 2;
-	// width: 10px;
-	// height: 140px;
-	// background-image: url("../../../assets/logos/wordpress.png");
-	// background: linear-gradient(to top, #8266F2, transparent);
-	// top: 100px;
-	// left: 100px;
-	// background-size: cover;
-	// background-position: center center;
-	// background-repeat: no-repeat;
-	// opacity: 0;
-	// animation: stone 7s ease 0s infinite;
-	// z-index: 900;
-	// filter: grayscale(100);
 }
 
 .stone:nth-child(2) {
@@ -95,10 +79,7 @@
 	box-shadow: 0 4px 70px;
 	background: url("../../../assets/logos/angular.png");
 	background-size: cover;
-	// transition: transform 0.5s ease;
 	animation: fadeInLeft 1s ease-in-out, down-up 1s ease-in-out infinite alternate-reverse both;
-	// animation-delay: .7s;
-	// animation-duration: 6s;
 	z-index: 2;
 	opacity: 1;
 }
@@ -111,10 +92,7 @@
 	top: 60vh;
 	left: 130px;
 	box-shadow: 0 4px 70px;
-	// transition: transform 0.5s ease;
 	animation: fadeInLeft 1s ease-in-out, up-down 1s ease-in-out infinite alternate-reverse both;
-	// animation-delay: .5s;
-	// animation-duration: 3s;
 	background: url("../../../assets/logos/nodejs.png");
 	background-size: cover;
 	z-index: 2;
@@ -130,10 +108,7 @@
 	right: 100px;
 	left: inherit;
 	box-shadow: 0 4px 70px;
-	// transition: transform 0.5s ease;
 	animation: fadeInRight 1s ease-in-out, up-down 1s ease-in-out infinite alternate-reverse both;
-	// animation-delay: .2s;
-	// animation-duration: 4s;
 	background: url("../../../assets/logos/prestashop.png");
 	background-size: cover;
 	z-index: 9;
@@ -149,10 +124,7 @@
 	right: 250px;
 	left: inherit;
 	box-shadow: 0 4px 70px;
-	// transition: transform 0.5s ease;
 	animation: fadeInRight 1s ease-in-out, down-up 1s ease-in-out infinite alternate-reverse both;
-	// animation-delay: .8s;
-	// animation-duration: 7s;
 	background: url("../../../assets/logos/wordpress.png");
 	background-size: cover;
 	z-index: 2;
@@ -227,16 +199,7 @@
 	opacity: 1;
 }
 
-// .stone:nth-child(even) {
-// 	background-size: cover;
-// 	box-shadow: 0 4px 94px;
-// 	z-index: 2;
-// 	opacity: 1;
-// }
-
-// .stone:nth-child(even):hover {
-// 	transform: rotate(360deg);
-// }
+// Rain animation
 @keyframes stone {
 	from {
 		transform: translateY(-500%);
@@ -249,6 +212,7 @@
 	}
 }
 
+// Fade element from left to right
 @keyframes fadeInRight {
 	from {
 		opacity: 0;
@@ -260,6 +224,7 @@
 	}
 }
 
+// Fade element from right to left
 @keyframes fadeInLeft {
 	from {
 		opacity: 0;
@@ -271,6 +236,7 @@
 	}
 }
 
+// add animation to element: move up and down
 @keyframes up-down {
 	0% {
 		transform: translateY(10px);
@@ -281,6 +247,7 @@
 	}
 }
 
+// add animation to element: move down and up
 @keyframes down-up {
 	0% {
 		transform: translateY(-10px);
@@ -290,6 +257,7 @@
 		transform: translateY(10px);
 	}
 }
+
 @media (max-width: 600px) {
 	.dev-lottie {
 		height: auto;
@@ -304,37 +272,37 @@
 
 @media (max-width: 1280px) {
 	.stone:nth-child(2) {
-		left: 130px;// angular
+		left: 130px; // angular
 	}
-	
+
 	.stone:nth-child(3) {
-		left: 100px;//nodejs
+		left: 100px; //nodejs
 	}
-	
+
 	.stone:nth-child(4) {
 		right: 130px;
-		left: inherit;//prestashop
+		left: inherit; //prestashop
 	}
-	
+
 	.stone:nth-child(5) {
-		right: 100px;//wordpress
+		right: 100px; //wordpress
 		left: inherit;
 	}
-	
-	
+
+
 	// .stone:nth-child(6) {
 	// 	right: 150px;//shopify
 	// }
-	
+
 	// .stone:nth-child(7) {
 	// 	left: 100px;// android
 	// }
-	
+
 	.stone:nth-child(8) {
-		left: 130px;// react
+		left: 130px; // react
 	}
-	
+
 	.stone:nth-child(9) {
-		right: 130px;// Shopware
+		right: 130px; // Shopware
 	}
-  }
+}
