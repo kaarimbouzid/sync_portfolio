@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./privacy.component.scss']
 })
 export class PrivacyComponent {
-
+  constructor() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }

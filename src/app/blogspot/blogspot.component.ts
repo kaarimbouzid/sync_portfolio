@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-cms-dev',
-  templateUrl: './cms-dev.component.html',
-  styleUrls: ['./cms-dev.component.scss']
+  selector: 'app-blogspot',
+  templateUrl: './blogspot.component.html',
+  styleUrls: ['./blogspot.component.scss']
 })
-export class CmsDevComponent {
+export class BlogspotComponent {
   constructor() {
     window.scroll({
       top: 0,

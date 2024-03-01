@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./web-dev.component.scss']
 })
 export class WebDevComponent {
-
+  constructor() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }

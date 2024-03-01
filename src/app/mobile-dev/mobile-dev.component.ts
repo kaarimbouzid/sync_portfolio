@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./mobile-dev.component.scss']
 })
 export class MobileDevComponent {
-
+  constructor() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }
