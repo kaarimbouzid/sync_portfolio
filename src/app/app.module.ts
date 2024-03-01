@@ -35,6 +35,7 @@ import { SeoCampaignsMarketingComponent } from './seo-campaigns-marketing/seo-ca
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { BlogspotComponent } from './blogspot/blogspot.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -65,7 +66,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SeoCampaignsMarketingComponent,
     PrivacyComponent,
     TermsConditionComponent,
-    BlogspotComponent
+    BlogspotComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

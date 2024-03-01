@@ -11,6 +11,7 @@ import { SeoCampaignsMarketingComponent } from '../seo-campaigns-marketing/seo-c
 import { PrivacyComponent } from '../privacy/privacy.component';
 import { TermsConditionComponent } from '../terms-condition/terms-condition.component';
 import { BlogspotComponent } from '../blogspot/blogspot.component';
+import { ContactPageComponent } from '../contact-page/contact-page.component';
 
 const routes: Routes = [
   {
@@ -59,6 +60,10 @@ const routes: Routes = [
       {
         path: 'blogspot',
         component: BlogspotComponent,
+      },
+      {
+        path: 'contact',
+        component: ContactPageComponent,
       },
     ],
   },
