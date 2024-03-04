@@ -12,31 +12,33 @@
     color: #FFF;
 }
 
-#web-service-integration {
+.web-service-integration {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    color: #333;
 }
 
 .web-service {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    overflow: hidden;
 }
 
 .web-service h1,
 .web-service h2 {
-    color: #333;
     text-align: center;
 }
 
 .web-service p {
-    color: #666;
-    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
 }
 
 .highlight {
@@ -44,28 +46,14 @@
     font-weight: bold;
 }
 
-.services {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+.image-container {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.service {
-    flex-basis: 30%;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.service h2 {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.service p {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.4;
+.image-container img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
