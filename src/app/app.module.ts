@@ -36,6 +36,36 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { BlogspotComponent } from './blogspot/blogspot.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
+
+const cookieConfig:NgcCookieConsentConfig = {
+  "cookie": {
+    "domain": 'https://www.sync.tn/'
+  },
+  "position": "bottom-right",
+  "theme": "block",
+  "palette": {
+    "popup": {
+      "background": "#464c80",
+      "text": "#ffffff",
+      "link": "#ffffff"
+    },
+    "button": {
+      "background": "#292c45",
+      "text": "#ffffff",
+      "border": "transparent"
+    }
+  },
+  "type": "info",
+  "content": {
+    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "dismiss": "Got it!",
+    "deny": "Refuse cookies",
+    "link": "Learn more",
+    "href": "https://www.sync.tn/terms-and-conditions",
+    "policy": "Cookie Policy"
+  }
+};
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -70,6 +100,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactPageComponent
   ],
   imports: [
+    NgcCookieConsentModule.forRoot(cookieConfig),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
