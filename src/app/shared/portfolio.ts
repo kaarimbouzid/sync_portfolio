@@ -3,7 +3,7 @@ import { Portfolio } from './interfaces/portfolio';
 export const PORTFOLIOS: Portfolio[] = [
   {
     _id: 1,
-    title: 'Installation',
+    title: 'project_title_1',
     category: 'WEB',
     description: "Installation d'un ficher sur un serveur dédié chez ionos",
     preview: 'assets/img/portfolio/installation_prev.png',
@@ -12,7 +12,7 @@ export const PORTFOLIOS: Portfolio[] = [
   },
   {
     _id: 2,
-    title: "(Synchronisation avec d'autres calendriers) Lavarel - Airbnb clone",
+    title: "project_title_2",
     category: 'WEB',
     description: "Le BOUTON (Synchroniser avec d'autres calendriers)\nIl est déjà programmé et fonctionnel seulement qu'il fonctionne manuellement j'explique seulement qu'une action humaine doit l'engager pour réaliser la tâche. J'aimerais l'automatiser J'aimerais que le site Web le fasse de manière automatisée toutes les 30 minutes.\nVoici une petite description qui est répertoriée sur le site.\nMontrez aux voyageurs quand ils peuvent réserver !\nVous pouvez toujours mettre à jour manuellement votre calendrier pour bloquer des dates ou les rendre disponibles.",
     preview: 'assets/img/portfolio/calendar-airnbnb_prev.png',
@@ -21,7 +21,7 @@ export const PORTFOLIOS: Portfolio[] = [
   },
   {
     _id: 3,
-    title: "Statistiques sur 100+ fichier d'export HTML de conversations WhatsApp",
+    title: "project_title_3",
     category: 'WEB',
     description: "Ces fichiers HTML ont le meme format qu'une conversation WhatsApp classique, messages ecrits, photos, vidéos, notes vocales, différents paricipants aus groupes etc...\nNous aimerions savoir, quel est le temps moyen de réponses des messages, combien de messages traités par jour, combien de relances par jour, a t-on oublié de répondre a des clients...",
     preview: 'assets/img/portfolio/export-whatsapp_prev.png',
@@ -30,7 +30,7 @@ export const PORTFOLIOS: Portfolio[] = [
   },
   {
     _id: 4,
-    title: 'Laravel Email Responsive Tableau Markdown',
+    title: 'project_title_4',
     category: 'WEB',
     description: "J'ai créé un site sous Laravel, j'ai mis en place un système d'email et celui-ci fonctionne. Par contre j'ai un soucis pour designé un tableau HTML/CSS avec les markdowns. Je cherche quelqu'un pouvant m'aider a regler ce soucis en installant en local la plateforme et en faisant un lien via mailtrap pour tester le rendu visuelle .\n Je souhaiterais rendre le tableau le tableau responsive via via mediaquery.",
     preview: 'assets/img/portfolio/laravel-mail-markdown_prev.png',
@@ -39,7 +39,7 @@ export const PORTFOLIOS: Portfolio[] = [
   },
   {
     _id: 5,
-    title: 'Petit script avec node.js',
+    title: 'project_title_5',
     category: 'WEB',
     description: "J'ai un script en node.js qui fonctionne bien mais je souhaite juste personnaliser.",
     preview: 'assets/img/portfolio/coding_prev.png',
@@ -48,7 +48,7 @@ export const PORTFOLIOS: Portfolio[] = [
   },
   {
     _id: 6,
-    title: 'SHOTZ',
+    title: 'project_title_6',
     category: 'SEO',
     description: "En tant qu'experts en développement, nous comprenons l'importance cruciale d'une visibilité en ligne efficace. Grâce à une combinaison de compétences techniques avancées et une connaissance approfondie des meilleures pratiques en SEO, nous sommes en mesure d'optimiser ce site pour les moteurs de recherche.",
     preview: 'assets/img/portfolio/shotz_prev.png',
@@ -57,7 +57,7 @@ export const PORTFOLIOS: Portfolio[] = [
   },
   {
     _id: 7,
-    title: 'Diagnostic Automobile OBD Multimarque',
+    title: 'project_title_7',
     category: 'WEB',
     description: 'Reprenez la main sur le diagnostic de votre véhicule : les origines de la marque klavkarr.',
     preview: 'assets/img/portfolio/klav_prev.png',
@@ -66,7 +66,7 @@ export const PORTFOLIOS: Portfolio[] = [
   },
   {
     _id: 8,
-    title: 'Creative-Cables',
+    title: 'project_title_8',
     category: 'WEB',
     description: "Creative-Cables a eu à cœur l'aspect créatif et le bricolage, se positionnant comme un support valable pour les passionnés d'ameublement, les designers d'intérieur, les architectes et tous les clients qui sont à la recherche d'éclairages fonctionnels avec un grand impact esthétique.",
     preview: 'assets/img/portfolio/creative_prev.png',
@@ -75,7 +75,7 @@ export const PORTFOLIOS: Portfolio[] = [
   },
   {
     _id: 9,
-    title: 'KRIS Translation',
+    title: 'project_title_9',
     category: 'WEB',
     description: 'High quality translations with a passion for language and a strong belief in cooperation.',
     preview: 'assets/img/portfolio/kris_prev.png',
@@ -84,7 +84,7 @@ export const PORTFOLIOS: Portfolio[] = [
   },
   {
     _id: 10,
-    title: 'Fly Delivery',
+    title: 'project_title_10',
     category: 'MOBILE',
     description: 'Mobile Application for Fly Delivery: Food Delivery application.',
     preview: 'assets/img/portfolio/fly_prev.png',

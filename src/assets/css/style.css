@@ -307,6 +307,10 @@ h6 {
   color: #0c3c53;
 }
 
+.navbar .dropdown ul a:hover {
+  cursor: pointer;
+}
+
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
