@@ -42,7 +42,7 @@ const cookieConfig:NgcCookieConsentConfig = {
   "cookie": {
     "domain": 'https://www.sync.tn/'
   },
-  "position": "bottom-right",
+  "position": "bottom-left",
   "theme": "block",
   "palette": {
     "popup": {
