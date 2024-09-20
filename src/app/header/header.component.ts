@@ -13,8 +13,16 @@ export class HeaderComponent implements OnInit {
   currentUrl: string = '';
 
   constructor(private router: Router, private translate: TranslateService) {
-    translate.setDefaultLang('en'); // Langue par défaut
-    translate.use('en'); // Langue initiale
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+
+  if (savedLanguage) {
+    // Si une langue est trouvée, l'utiliser
+    this.translate.use(savedLanguage);
+  } else {
+    // Sinon, utiliser la langue par défaut
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
 
     // Écoute les changements de route
     this.router.events.subscribe((event) => {
@@ -35,7 +43,9 @@ export class HeaderComponent implements OnInit {
 
   switchLanguage(language: string) {
     this.translate.use(language);
+    localStorage.setItem('selectedLanguage', language);
   }
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     // Logique pour déterminer si le défilement a atteint un certain seuil
@@ -58,10 +68,10 @@ export class HeaderComponent implements OnInit {
     if (link == "/") {
       // this.activeLink = link;
       this.isNavbarActive = !this.isNavbarActive;
-      window.scroll({ 
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth' 
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
       });
     }else{
       if (this.currentUrl != "/") {

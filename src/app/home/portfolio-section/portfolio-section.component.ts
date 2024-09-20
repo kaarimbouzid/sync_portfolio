@@ -1,5 +1,7 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { Portfolio } from 'src/app/shared/interfaces/portfolio';
 import { PORTFOLIOS } from 'src/app/shared/portfolio';
 
@@ -26,6 +28,30 @@ export class PortfolioSectionComponent {
   seoBtn: boolean = false;
   webBtn: boolean = false;
   mobileBtn: boolean = false;
+
+  constructor(
+    private translate: TranslateService,
+    private router: Router
+  ){}
+
+   // Fonction pour slugifier le texte (remplace les espaces et caractères spéciaux)
+   slugify(text: string): string {
+    return text
+      .toLowerCase()
+      .replace(/ /g, '-')        // Remplace les espaces par des tirets
+      .replace(/[^\w-]+/g, '');  // Enlève les caractères non alphanumériques
+  }
+
+  selectProject(project: any) {
+    // Stocker le projet dans le localStorage
+    localStorage.setItem('selectedProject', JSON.stringify(project));
+
+    // Traduire le titre du projet et slugifier avant de naviguer
+    this.translate.get(project.title).subscribe((translatedTitle: string) => {
+      const slugifiedTitle = this.slugify(translatedTitle);
+      this.router.navigate(['/portfolio-details', slugifiedTitle]);
+    });
+  }
 
   filterProjects(category: string) {
     if (category === 'All') {

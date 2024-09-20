@@ -12,13 +12,12 @@
             <li (click)="filterProjects('MOBILE')" [ngClass]="mobileBtn ? 'filter-active' : '' ">Mobile</li>
             <li (click)="filterProjects('SEO')" [ngClass]="seoBtn ? 'filter-active' : '' ">SEO</li>
         </ul>
-        
+
         <!-- List of projects -->
         <div class="projets-section">
             <div class="card-grid">
-                <a [ngClass]="'card ' + projet.category.toLowerCase()" 
-                    *ngFor="let projet of filteredProjects"
-                    routerLink="portfolio-details/{{ projet._id }}" 
+                <a [ngClass]="'card ' + projet.category.toLowerCase()"
+                    *ngFor="let projet of filteredProjects" (click)="selectProject(projet)"
                     [@fadeInOut]>
                     <!-- Card Image -->
                     <div class="card__background" style="background-image: url({{projet.preview}})"></div>

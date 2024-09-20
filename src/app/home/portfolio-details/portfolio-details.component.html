@@ -6,10 +6,9 @@
 
             <ol>
                 <li><a routerLink="/">{{ 'home' | translate }}</a></li>
-                <li>Project Details</li>
+                <li>{{ 'project_details' | translate }}</li>
             </ol>
-            <!-- <h2>{{ singleProject?.title.rendered }} Details</h2> -->
-            <h2>{{ singleProject?.title }} Details</h2>
+            <h2>{{ singleProject?.title | translate }} {{ 'details' | translate }}</h2>
 
         </div>
     </section><!-- End Breadcrumbs -->
@@ -22,31 +21,18 @@
 
                 <div class="col-lg-8">
                     <div class="portfolio-details-slider swiper">
+                      <img [src]="'../../../'+singleProject?.image" alt="{{ singleProject?.title }}">
                         <div class="swiper-wrapper align-items-center">
-
-                            <!-- <img [src]="singleProject?.jetpack_featured_media_url"
-                                alt="{{ singleProject?.title.rendered }}"> -->
-                            <img [src]="'../../../'+singleProject?.image" alt="{{ singleProject?.title }}">
-
-                            <!-- <div class="swiper-slide">
-                                <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-                            </div> -->
-
-                        </div>
+                    </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="portfolio-info">
-                        <h3>Project information</h3>
+                        <h3>{{ 'project_information' | translate }}</h3>
                         <ul>
-                            <li><strong>Category</strong>:
-                                <!-- <p>{{ filterCategory(singleProject?.categories) }}</p> -->
+                            <li><strong>{{ 'category' | translate }}</strong>:
                                 <p>{{ singleProject?.category }}</p>
                             </li>
                             <!-- <li><strong>Client</strong>: ASU Company</li> -->
@@ -54,21 +40,17 @@
                             <li><strong>Project URL</strong>: <a href="{{
                                 eliminerCaracteres(singleProject?.excerpt.rendered) }}" target="_blank">{{
                                     eliminerCaracteres(singleProject?.excerpt.rendered) }}</a></li> -->
-                            <li *ngIf="singleProject.date"><strong>Project date</strong>: {{ singleProject?.date }}</li>
+                            <li *ngIf="singleProject.date"><strong>{{ 'project_date' | translate }}</strong>: {{ singleProject?.date }}</li>
                             <li *ngIf="singleProject.url">
-                                <strong>Lien de site</strong>: <a [href]="singleProject.url" target="_blank">{{
+                                <strong>{{ 'lien_de_site' | translate }}</strong>: <a [href]="singleProject.url" target="_blank">{{
                                     singleProject.url }}</a>
                             </li>
 
                         </ul>
                     </div>
                     <div class="portfolio-description">
-                        <h2>This is project description</h2>
-
-                        <!-- {{ eliminerCaracteres(this.singleProject?.content.rendered) }} -->
+                        <h2>{{ 'description' | translate }}</h2>
                         {{ this.singleProject?.description }}
-
-
                     </div>
                 </div>
 
