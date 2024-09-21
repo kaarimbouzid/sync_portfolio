@@ -21,9 +21,9 @@
 
                 <div class="col-lg-8">
                     <div class="portfolio-details-slider swiper">
-                      <img [src]="'../../../'+singleProject?.image" alt="{{ singleProject?.title }}">
+                        <img [src]="'../../../'+singleProject?.image" alt="{{ singleProject?.title }}">
                         <div class="swiper-wrapper align-items-center">
-                    </div>
+                        </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
@@ -40,9 +40,11 @@
                             <li><strong>Project URL</strong>: <a href="{{
                                 eliminerCaracteres(singleProject?.excerpt.rendered) }}" target="_blank">{{
                                     eliminerCaracteres(singleProject?.excerpt.rendered) }}</a></li> -->
-                            <li *ngIf="singleProject.date"><strong>{{ 'project_date' | translate }}</strong>: {{ singleProject?.date }}</li>
+                            <li *ngIf="singleProject.date"><strong>{{ 'project_date' | translate }}</strong>: {{
+                                singleProject?.date }}</li>
                             <li *ngIf="singleProject.url">
-                                <strong>{{ 'lien_de_site' | translate }}</strong>: <a [href]="singleProject.url" target="_blank">{{
+                                <strong>{{ 'lien_de_site' | translate }}</strong>: <a [href]="singleProject.url"
+                                    target="_blank">{{
                                     singleProject.url }}</a>
                             </li>
 
@@ -50,7 +52,7 @@
                     </div>
                     <div class="portfolio-description">
                         <h2>{{ 'description' | translate }}</h2>
-                        {{ this.singleProject?.description }}
+                        {{ this.singleProject?.description | translate }}
                     </div>
                 </div>
 
