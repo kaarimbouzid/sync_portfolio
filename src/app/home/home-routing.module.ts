@@ -22,7 +22,7 @@ const routes: Routes = [
         component: HomeComponent,
       },
       {
-        path: 'portfolio-details/:id',
+        path: 'portfolio-details/:name',
         component: PortfolioDetailsComponent,
       },
       {

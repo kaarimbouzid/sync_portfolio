@@ -13,7 +13,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { LottieComponent, LottieDirective, provideLottieOptions } from 'ngx-lottie'; 
+import { LottieComponent, LottieDirective, provideLottieOptions } from 'ngx-lottie';
 import { HomeModule } from './home/home.module';
 import { HeroSectionComponent } from './home/hero-section/hero-section.component';
 import { ClientsSectionComponent } from './home/clients-section/clients-section.component';
@@ -97,7 +97,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrivacyComponent,
     TermsConditionComponent,
     BlogspotComponent,
-    ContactPageComponent
+    ContactPageComponent,
   ],
   imports: [
     NgcCookieConsentModule.forRoot(cookieConfig),
