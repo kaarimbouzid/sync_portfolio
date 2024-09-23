@@ -24,7 +24,6 @@ import { CtaSectionComponent } from './home/cta-section/cta-section.component';
 import { PortfolioSectionComponent } from './home/portfolio-section/portfolio-section.component';
 import { FAQSectionComponent } from './home/faq-section/faq-section.component';
 import { ContactSectionComponent } from './home/contact-section/contact-section.component';
-import { TrustBoxSectionComponent } from './home/trust-box-section/trust-box-section.component';
 import { WebServiceIntegrationComponent } from './web-service-integration/web-service-integration.component';
 import { WebDevComponent } from './web-dev/web-dev.component';
 import { PluginsOnDemandComponent } from './plugins-on-demand/plugins-on-demand.component';
@@ -85,7 +84,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     PortfolioSectionComponent,
     FAQSectionComponent,
     ContactSectionComponent,
-    TrustBoxSectionComponent,
     WebServiceIntegrationComponent,
     WebDevComponent,
     PluginsOnDemandComponent,
@@ -121,10 +119,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     provideLottieOptions({
       player: () => import('lottie-web'),
     }),
-    // {
-    //   provide: LocationStrategy,
-    //   useClass: HashLocationStrategy, // oldOne: PathLocationStrategy
-    // },
   ],
   bootstrap: [AppComponent],
 })

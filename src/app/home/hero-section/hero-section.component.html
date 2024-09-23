@@ -12,12 +12,12 @@
             <div class="stone"></div>  <!-- 8 -->
             <div class="stone"></div>  <!-- 9 -->
         </div>
-        <div class="banner-text" data-aos="fade-up" data-aos-delay="200">
-            <h1 class="animate-charcter">{{ 'premier_titre' | translate }}</h1>
-            <h4>{{ 'sous_premier_titre' | translate }}</h4>
+        <div class="banner-text" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+          <h1 class="animate-charcter">{{ 'premier_titre' | translate }}</h1>
+          <h4>{{ 'sous_premier_titre' | translate }}</h4>
         </div>
         <div class="dev-lottie" data-aos="zoom-in" data-aos-delay="200">
-            <ng-lottie [options]="dev"></ng-lottie>
+          <ng-lottie [options]="dev" loading="lazy"></ng-lottie>
         </div>
     </div>
 </section>
