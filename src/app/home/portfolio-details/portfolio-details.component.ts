@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PORTFOLIOS } from '../../shared/portfolio';
 import { Portfolio } from '../../shared/interfaces/portfolio';
 import { ProjectsService } from 'src/app/shared/services/projects.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-portfolio-details',
@@ -16,7 +17,8 @@ export class PortfolioDetailsComponent implements OnInit {
   portfolioDetails!: any;
   allCategories: any;
   constructor(
-    private projectService: ProjectsService
+    private projectService: ProjectsService,
+    private metaService: Meta
   ) {
     window.scroll({
       top: 0,
@@ -26,6 +28,7 @@ export class PortfolioDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.metaService.addTag({ name: 'robots', content: 'noindex, nofollow' });
     const savedProject = localStorage.getItem('selectedProject');
 
   if (savedProject) {
@@ -74,4 +77,7 @@ export class PortfolioDetailsComponent implements OnInit {
     }
   }
 
+  ngOnDestroy(): void {
+    this.metaService.removeTag("name='robots'");
+  }
 }

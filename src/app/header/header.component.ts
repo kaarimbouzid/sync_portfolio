@@ -14,15 +14,16 @@ export class HeaderComponent implements OnInit {
 
   constructor(private router: Router, private translate: TranslateService) {
     const savedLanguage = localStorage.getItem('selectedLanguage');
+    const browserLanguage = navigator.language.substr(0, 2);
 
-  if (savedLanguage) {
-    // Si une langue est trouvée, l'utiliser
-    this.translate.use(savedLanguage);
-  } else {
-    // Sinon, utiliser la langue par défaut
-    translate.setDefaultLang('en');
-    translate.use('en');
-  }
+    if (savedLanguage) {
+        // Si une langue est enregistrée, l'utiliser
+        this.translate.use(savedLanguage);
+    } else {
+        // Sinon, utiliser la langue du navigateur par défaut
+        this.translate.setDefaultLang(browserLanguage);
+        this.translate.use(browserLanguage);
+    }
 
     // Écoute les changements de route
     this.router.events.subscribe((event) => {

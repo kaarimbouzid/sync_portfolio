@@ -1,97 +1,91 @@
 <header id="header" [class.header-scrolled]="isHeaderScrolled" class="fixed-top" [class.header-inner-pages]="isHeader">
-        <div class="container d-flex align-items-center">
-                <div class="logo me-auto">
-                        <a href="/"><img src="assets/img/sync_logo.png" alt="sync" width="140px" height="50px"></a>
-                </div>
-                <nav id="navbar" class="navbar" [class.navbar-mobile]="isMobile && isNavbarActive">
-                        <ul>
-                                <li>
-                                        <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/'}"
-                                                (click)="setActiveLink('/')" routerLink="/">
-                                                {{ 'home' | translate }}
-                                        </a>
-                                </li>
-                                <li>
-                                        <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#about'}"
-                                                (click)="setActiveLink('/#about')" href="/#about">
-                                                {{ 'about' | translate}}
-                                        </a>
-                                </li>
-                                <li>
-                                        <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#services'}"
-                                                (click)="setActiveLink('/#services')" href="/#services">
-                                                {{ 'services' | translate }}
-                                        </a>
-                                </li>
-                                <li>
-                                        <a class="nav-link scrollto"
-                                                [ngClass]="{'active': activeLink === '/#portfolio'}"
-                                                (click)="setActiveLink('/#portfolio')" href="/#portfolio">
-                                                {{ 'portfolio' | translate }}
-                                        </a>
-                                </li>
+  <div class="container d-flex align-items-center">
+      <div class="logo me-auto">
+          <a href="/"><img src="assets/img/sync_logo.png" alt="sync" width="auto" height="auto"></a>
+      </div>
+      <nav id="navbar" class="navbar" [class.navbar-mobile]="isMobile && isNavbarActive">
+          <ul>
+              <li>
+                  <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/'}"
+                      (click)="setActiveLink('/')" routerLink="/">
+                      {{ 'home' | translate }}
+                  </a>
+              </li>
+              <li>
+                  <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#about'}"
+                      (click)="setActiveLink('/#about')" href="/#about">
+                      {{ 'about' | translate }}
+                  </a>
+              </li>
+              <li>
+                  <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#services'}"
+                      (click)="setActiveLink('/#services')" href="/#services">
+                      {{ 'services' | translate }}
+                  </a>
+              </li>
+              <li>
+                  <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#portfolio'}"
+                      (click)="setActiveLink('/#portfolio')" href="/#portfolio">
+                      {{ 'portfolio' | translate }}
+                  </a>
+              </li>
 
-                                <li>
-                                        <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#contact'}"
-                                        routerLink="/contact">
-                                                {{ 'contact' | translate }}
-                                        </a>
-                                </li>
-                                <li class="dropdown hide-in-mobile">
-                                        <a>
-                                                <span>{{ 'langue' | translate }}</span>
-                                                <i class="bi bi-chevron-down"></i>
-                                        </a>
-                                        <ul>
-                                                <li>
-                                                        <a (click)="switchLanguage('en')">{{ 'english' | translate }}
-                                                                <img src="assets/img/Flag_of_the_United_Kingdom.png"
-                                                                height="20px" width="30px" alt="English Flag">
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a (click)="switchLanguage('fr')">{{ 'french' | translate }}
-                                                                <img src="assets/img/Flag_of_France.png" width="30px"
-                                                                height="20px" alt="French Flag">
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a (click)="switchLanguage('de')">{{ 'deutch' | translate }}
-                                                                <img src="assets/img/Allemand-flag.png" width="30px"
-                                                                height="20px" alt="Deutch Flag">
-                                                        </a>
-                                                </li>
-                                        </ul>
-                                </li>
-                                <li class="hide-contact">
-                                        <button class="button-background-move" role="button"
-                                                onClick="window.open('https://calendly.com/hot-transfere/30min')">
-                                                {{ 'devis-gratuit' | translate }}
-                                        </button>
-                                </li>
-                                <hr />
-                                <li class="hide-languages">
-                                        <a (click)="switchLanguage('en')">{{ 'english' | translate }}
-                                                <img src="assets/img/Flag_of_the_United_Kingdom.png"
-                                                        width="30px" height="20px" alt="English Flag">
-                                        </a>
-                                </li>
-                                <li class="hide-languages">
-                                        <a (click)="switchLanguage('fr')">{{ 'french' | translate }}
-                                                <img src="assets/img/Flag_of_France.png" width="30px"
-                                                height="20px" alt="French Flag">
-                                        </a>
-                                </li>
-                                <li class="hide-languages">
-                                        <a (click)="switchLanguage('de')">{{ 'deutch' | translate }}
-                                                <img src="assets/img/Allemand-flag.png" width="30px"
-                                                height="20px" alt="Deutch Flag">
-                                        </a>
-                                </li>
+              <li>
+                  <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#contact'}" routerLink="/contact">
+                      {{ 'contact' | translate }}
+                  </a>
+              </li>
+              <li class="dropdown">
+                  <a>
+                      <span>{{ 'langue' | translate }}</span>
+                      <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul>
+                      <li>
+                          <a (click)="switchLanguage('en')">{{ 'english' | translate }}
+                              <img src="assets/img/Flag_of_the_United_Kingdom.png" height="20px" width="30px" alt="English Flag">
+                          </a>
+                      </li>
+                      <li>
+                          <a (click)="switchLanguage('fr')">{{ 'french' | translate }}
+                              <img src="assets/img/Flag_of_France.png" width="30px" height="20px" alt="French Flag">
+                          </a>
+                      </li>
+                      <li>
+                          <a (click)="switchLanguage('de')">{{ 'deutch' | translate }}
+                              <img src="assets/img/Allemand-flag.png" width="30px" height="20px" alt="Deutch Flag">
+                          </a>
+                      </li>
+                  </ul>
+              </li>
 
-                        </ul>
-                        <i class="bi bi-list mobile-nav-toggle" (click)="toggleNavbarClass()"></i>
-                </nav><!-- .navbar -->
+              <!-- Mobile specific language options -->
+              <li class="hide-in-desktop">
+                  <a (click)="switchLanguage('en')">{{ 'english' | translate }}
+                      <img src="assets/img/Flag_of_the_United_Kingdom.png" width="30px" height="20px" alt="English Flag">
+                  </a>
+              </li>
+              <li class="hide-in-desktop">
+                  <a (click)="switchLanguage('fr')">{{ 'french' | translate }}
+                      <img src="assets/img/Flag_of_France.png" width="30px" height="20px" alt="French Flag">
+                  </a>
+              </li>
+              <li class="hide-in-desktop">
+                  <a (click)="switchLanguage('de')">{{ 'deutch' | translate }}
+                      <img src="assets/img/Allemand-flag.png" width="30px" height="20px" alt="Deutch Flag">
+                  </a>
+              </li>
+          </ul>
 
-        </div>
+          <!-- Free quote button (visible only on desktop) -->
+          <div class="hide-in-mobile">
+              <button class="button-background-move" role="button"
+                  onClick="window.open('https://calendly.com/hot-transfere/30min')">
+                  {{ 'devis-gratuit' | translate }}
+              </button>
+          </div>
+
+          <i class="bi bi-list mobile-nav-toggle" (click)="toggleNavbarClass()"></i>
+      </nav><!-- .navbar -->
+  </div>
 </header>

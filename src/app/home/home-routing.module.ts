@@ -5,13 +5,13 @@ import { PortfolioDetailsComponent } from './portfolio-details/portfolio-details
 import { WebServiceIntegrationComponent } from '../web-service-integration/web-service-integration.component';
 import { WebDevComponent } from '../web-dev/web-dev.component';
 import { PluginsOnDemandComponent } from '../plugins-on-demand/plugins-on-demand.component';
-import { CmsDevComponent } from '../cms-dev/cms-dev.component';
 import { MobileDevComponent } from '../mobile-dev/mobile-dev.component';
 import { SeoCampaignsMarketingComponent } from '../seo-campaigns-marketing/seo-campaigns-marketing.component';
 import { PrivacyComponent } from '../privacy/privacy.component';
 import { TermsConditionComponent } from '../terms-condition/terms-condition.component';
 import { BlogspotComponent } from '../blogspot/blogspot.component';
 import { ContactPageComponent } from '../contact-page/contact-page.component';
+import { CmsDevComponent } from '../cms-dev/cms-dev.component';
 
 const routes: Routes = [
   {

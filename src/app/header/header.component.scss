@@ -55,6 +55,9 @@
   .button-background-move {
     padding: 13px 50px 13px;
   }
+  .hide-in-desktop {
+    display: none;
+}
 }
 
 @media (max-width: 1200px) {
@@ -71,4 +74,5 @@
   .hide-languages {
     display: block;
   }
+
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgcCookieConsentService, NgcInitializationErrorEvent, 
+import { NgcCookieConsentService, NgcInitializationErrorEvent,
   NgcInitializingEvent, NgcNoCookieLawEvent, NgcStatusChangeEvent } from 'ngx-cookieconsent';
 import { Subscription } from 'rxjs';
 
@@ -50,7 +50,7 @@ export class AppComponent {
 
     this.initializationErrorSubscription = this.cookieService.initializationError$.subscribe(
       (event: NgcInitializationErrorEvent) => {
-        // the cookieconsent has failed to initialize... 
+        // the cookieconsent has failed to initialize...
         console.log(`initializationError: ${JSON.stringify(event.error?.message)}`);
       });
 

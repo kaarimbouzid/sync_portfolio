@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { ProjectsService } from '../shared/services/projects.service';
-import { FormBuilder } from '@angular/forms';
+import { Meta } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,10 @@ export class HomeComponent implements OnInit {
   errorMessage: any;
   allCategories: any;
 
-  constructor(private projectService: ProjectsService) {
+  constructor(private projectService: ProjectsService,
+    private metaService: Meta,
+    private translateService: TranslateService
+  ) {
   }
 
   // listen for the scroll event on the window object.
@@ -28,54 +32,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.getProjects();
-    // this.getCategory();
+    this.translateService.get('meta_description').subscribe((description: string) => {
+      this.metaService.updateTag({ name: 'description', content: description });
+    });
   }
 
-  // time: boolean = false;
-  // getProjects() {
-  //   this.projectService.getProjects().subscribe(
-  //     (data) => {
-  //       this.time = true;
-  //       this.projects = data;
-  //       this.projects2 = data;
-  //     },
-  //     (error) => {
-  //       // if any error, Code throws the error
-  //       this.errorMessage = error.error.message;
-  //       console.log(error.error.message, 'error');
-  //     }
-  //   );
-  // }
-
-  // retrieves categories from a service and filters out the category with id 1
-  // getCategory() {
-  //   this.projectService.getCategory().subscribe(
-  //     (data) => {
-  //       this.allCategories = data;
-  //       this.allCategories = this.allCategories.filter((a: any) => a.id != 1);
-  //     },
-  //     (error) => {
-  //       // if any error, Code throws the error
-  //       this.errorMessage = error.error.message;
-  //       console.log(error.error.message, 'error');
-  //     }
-  //   );
-  // }
-
-  // The function filters a category based on its ID and returns its name.
-  // filterCategory(idCategory: any) {
-  //   for (let i = 0; i < this.allCategories?.length; i++) {
-  //     if (idCategory.includes(this.allCategories[i].id)) {
-  //       return this.allCategories[i].name;
-  //     }
-  //   }
-  // }
-
-  // The `liChange(val: string)` method is used to filter the `projects` array based on the selected category.
-  // iChange(val: string) {
-  //   this.projects2 = this.projects.filter((projet: any) => {
-  //     return projet.categories.includes(val);
-  //   });
-  // }
 }
