@@ -298,6 +298,7 @@
   "project_title_9": "Wortanzahl-basiertes Preismodul für KRIS Translation | Benutzerdefinierte WordPress-Entwicklung",
   "project_desc_9": "Entwickeln Sie ein benutzerdefiniertes WordPress-Plugin für KRIS Translation, das automatisch die Anzahl der Wörter in hochgeladenen Dokumenten zählt und den Preis basierend auf verschiedenen Attributen und Varianten berechnet. Dieses Plugin integriert sich nahtlos in die E-Commerce-Plattform, sodass Benutzer Dokumente hochladen, die Wortanzahl bewerten und dann den Gesamtbetrag dynamisch in den Warenkorb legen können, basierend auf der ausgewählten Sprache, dem Servicetyp und anderen anpassbaren Faktoren. Die Lösung umfasst Echtzeit-Wortzahlanalysen, attributbasierte Preismodelle und eine benutzerfreundliche Oberfläche, die einen effizienten und transparenten Arbeitsablauf für Übersetzungsdienste gewährleistet.",
   "project_title_10": "Fly Delivery",
+  "project_desc_10": "FlyDelivery ist eine innovative Lieferanwendung, die darauf ausgelegt ist, die Lieferung von Lebensmitteln und verschiedenen anderen Produkten zu optimieren und Kunden, Lieferanten und Lieferpersonal über eine nahtlose Plattform miteinander zu verbinden. Das System besteht aus drei dedizierten mobilen Anwendungen – Client-App, Lieferanten-App und Liefermann-App – sowie einem erweiterten Dashboard für eine effiziente Auftragsabwicklung und -verwaltung.",
   "details": "Details",
   "project_details": "Projekt details",
   "project_information": "Projekt informationen",

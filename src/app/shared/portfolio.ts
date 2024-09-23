@@ -86,8 +86,7 @@ export const PORTFOLIOS: Portfolio[] = [
     _id: 10,
     title: 'project_title_10',
     category: 'MOBILE',
-    description:
-      'Mobile Application for Fly Delivery: Food Delivery application.',
+    description: 'project_desc_9',
     preview: 'assets/img/portfolio/fly_prev.png',
     image: 'assets/img/portfolio/fly.jpg',
     date: '02/2024',

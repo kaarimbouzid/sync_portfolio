@@ -79,7 +79,7 @@
 	box-shadow: 0 4px 70px;
 	background: url("../../../assets/logos/angular.png");
 	background-size: cover;
-	animation: fadeInLeft 1s ease-in-out, down-up 1s ease-in-out infinite alternate-reverse both;
+	animation: fadeInLeft 1s ease-in-out, up-down 1s ease-in-out infinite alternate-reverse both;
 	z-index: 2;
 	opacity: 1;
 }
@@ -124,7 +124,7 @@
 	right: 250px;
 	left: inherit;
 	box-shadow: 0 4px 70px;
-	animation: fadeInRight 1s ease-in-out, down-up 1s ease-in-out infinite alternate-reverse both;
+	animation: fadeInLeft 1s ease-in-out, up-down 1s ease-in-out infinite alternate-reverse both;
 	background: url("../../../assets/logos/wordpress.png");
 	background-size: cover;
 	z-index: 2;
