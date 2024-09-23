@@ -1,7 +1,7 @@
 <header id="header" [class.header-scrolled]="isHeaderScrolled" class="fixed-top" [class.header-inner-pages]="isHeader">
         <div class="container d-flex align-items-center">
                 <div class="logo me-auto">
-                        <a href="/"><img src="assets/img/sync_logo_5.png" alt="sync"></a>
+                        <a href="/"><img src="assets/img/sync_logo_5.png" alt="sync" width="140px" height="50px"></a>
                 </div>
                 <nav id="navbar" class="navbar" [class.navbar-mobile]="isMobile && isNavbarActive">
                         <ul>
@@ -30,16 +30,10 @@
                                                 {{ 'portfolio' | translate }}
                                         </a>
                                 </li>
-                                <!-- <li>
-                                        <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#team'}"
-                                                (click)="setActiveLink('/#team')" href="/#team">
-                                                {{ 'team' | translate}}
-                                        </a>
-                                </li> -->
+
                                 <li>
                                         <a class="nav-link scrollto" [ngClass]="{'active': activeLink === '/#contact'}"
                                         routerLink="/contact">
-                                        <!-- (click)="setActiveLink('/#contact')" href="/#contact" -->
                                                 {{ 'contact' | translate }}
                                         </a>
                                 </li>
@@ -50,21 +44,21 @@
                                         </a>
                                         <ul>
                                                 <li>
-                                                        <a (click)="switchLanguage('en')">English
+                                                        <a (click)="switchLanguage('en')">{{ 'english' | translate }}
                                                                 <img src="assets/img/Flag_of_the_United_Kingdom.png"
-                                                                        width="30px" alt="English Flag">
+                                                                height="20px" width="30px" alt="English Flag">
                                                         </a>
                                                 </li>
                                                 <li>
-                                                        <a (click)="switchLanguage('fr')">Français
+                                                        <a (click)="switchLanguage('fr')">{{ 'french' | translate }}
                                                                 <img src="assets/img/Flag_of_France.png" width="30px"
-                                                                        alt="French Flag">
+                                                                height="20px" alt="French Flag">
                                                         </a>
                                                 </li>
                                                 <li>
-                                                        <a (click)="switchLanguage('de')">Allemand
+                                                        <a (click)="switchLanguage('de')">{{ 'deutch' | translate }}
                                                                 <img src="assets/img/Allemand-flag.png" width="30px"
-                                                                        alt="Deutch Flag">
+                                                                height="20px" alt="Deutch Flag">
                                                         </a>
                                                 </li>
                                         </ul>
@@ -72,26 +66,26 @@
                                 <li class="hide-contact">
                                         <button class="button-background-move" role="button"
                                                 onClick="window.open('https://calendly.com/hot-transfere/30min')">
-                                                {{ 'devis-gratuit' | translate }} 
+                                                {{ 'devis-gratuit' | translate }}
                                         </button>
                                 </li>
                                 <hr />
                                 <li class="hide-languages">
-                                        <a (click)="switchLanguage('en')">English
+                                        <a (click)="switchLanguage('en')">{{ 'english' | translate }}
                                                 <img src="assets/img/Flag_of_the_United_Kingdom.png"
-                                                        width="30px" alt="English Flag">
+                                                        width="30px" height="20px" alt="English Flag">
                                         </a>
                                 </li>
                                 <li class="hide-languages">
-                                        <a (click)="switchLanguage('fr')">Français
+                                        <a (click)="switchLanguage('fr')">{{ 'french' | translate }}
                                                 <img src="assets/img/Flag_of_France.png" width="30px"
-                                                        alt="French Flag">
+                                                height="20px" alt="French Flag">
                                         </a>
                                 </li>
                                 <li class="hide-languages">
-                                        <a (click)="switchLanguage('de')">Allemand
+                                        <a (click)="switchLanguage('de')">{{ 'deutch' | translate }}
                                                 <img src="assets/img/Allemand-flag.png" width="30px"
-                                                        alt="Deutch Flag">
+                                                height="20px" alt="Deutch Flag">
                                         </a>
                                 </li>
 

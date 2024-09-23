@@ -22,7 +22,6 @@ import { WhyUsSectionComponent } from './home/why-us-section/why-us-section.comp
 import { ServicesSectionComponent } from './home/services-section/services-section.component';
 import { CtaSectionComponent } from './home/cta-section/cta-section.component';
 import { PortfolioSectionComponent } from './home/portfolio-section/portfolio-section.component';
-import { TeamSectionComponent } from './home/team-section/team-section.component';
 import { FAQSectionComponent } from './home/faq-section/faq-section.component';
 import { ContactSectionComponent } from './home/contact-section/contact-section.component';
 import { TrustBoxSectionComponent } from './home/trust-box-section/trust-box-section.component';
@@ -84,7 +83,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     ServicesSectionComponent,
     CtaSectionComponent,
     PortfolioSectionComponent,
-    TeamSectionComponent,
     FAQSectionComponent,
     ContactSectionComponent,
     TrustBoxSectionComponent,
