@@ -35,11 +35,6 @@
                             <li><strong>{{ 'category' | translate }}</strong>:
                                 <p>{{ singleProject?.category }}</p>
                             </li>
-                            <!-- <li><strong>Client</strong>: ASU Company</li> -->
-                            <!-- <li><strong>Project date</strong>: {{ formatDate(singleProject?.date) }}</li>
-                            <li><strong>Project URL</strong>: <a href="{{
-                                eliminerCaracteres(singleProject?.excerpt.rendered) }}" target="_blank">{{
-                                    eliminerCaracteres(singleProject?.excerpt.rendered) }}</a></li> -->
                             <li *ngIf="singleProject.date"><strong>{{ 'project_date' | translate }}</strong>: {{
                                 singleProject?.date }}</li>
                             <li *ngIf="singleProject.url">
@@ -59,6 +54,5 @@
             </div>
 
         </div>
-    </section><!-- End Portfolio Details Section -->
-
+    </section>
 </main>
