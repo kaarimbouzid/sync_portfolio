@@ -169,33 +169,6 @@
     setTimeout(function() {
       preloader.remove();
     }, 2000);
-    // window.addEventListener("load", () => {
-    //   preloader.remove();
-    // });
-  }
-
-  /**
-   * Initiate  glightbox
-   */
-  const glightbox = GLightbox({
-    selector: ".glightbox",
-  });
-
-  /**
-   * Skills animation
-   */
-  let skilsContent = select(".skills-content");
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: "80%",
-      handler: function (direction) {
-        let progress = select(".progress .progress-bar", true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute("aria-valuenow") + "%";
-        });
-      },
-    });
   }
 
   /**
@@ -230,13 +203,6 @@
         true
       );
     }
-  });
-
-  /**
-   * Initiate portfolio lightbox
-   */
-  const portfolioLightbox = GLightbox({
-    selector: ".portfolio-lightbox",
   });
 
   /**

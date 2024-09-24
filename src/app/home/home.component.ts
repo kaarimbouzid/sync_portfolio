@@ -1,5 +1,4 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { ProjectsService } from '../shared/services/projects.service';
 import { Meta } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -12,12 +11,10 @@ import { TranslateService } from '@ngx-translate/core';
 export class HomeComponent implements OnInit {
 
   isHeaderScrolled = false;
-  projects: any;
-  projects2: any;
   errorMessage: any;
   allCategories: any;
 
-  constructor(private projectService: ProjectsService,
+  constructor(
     private metaService: Meta,
     private translateService: TranslateService
   ) {

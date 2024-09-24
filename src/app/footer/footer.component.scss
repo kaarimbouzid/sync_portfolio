@@ -7,3 +7,8 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+
+.footer_logo {
+  max-width: 100%; /* Pour une meilleure adaptabilité */
+  height: auto; /* Conserve les proportions de l'image */
+}

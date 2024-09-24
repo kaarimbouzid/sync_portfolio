@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { ProjectsService } from 'src/app/shared/services/projects.service';
 
 @Component({
   selector: 'contact-section',
@@ -9,7 +8,6 @@ import { ProjectsService } from 'src/app/shared/services/projects.service';
 })
 export class ContactSectionComponent {
   id!: string;
-
   form: FormGroup;
   name: FormControl = new FormControl('', [Validators.required]);
   email: FormControl = new FormControl('', [
@@ -38,7 +36,6 @@ export class ContactSectionComponent {
 
   onSubmit() {
     if (this.form.status == 'VALID' && this.honeypot.value == '') {
-      // console.log('this.form', this.form.value);
       this.form.disable(); // disable the form if it's valid to disable multiple submissions
       var formData: any = new FormData();
       formData.append('name', this.form.get('name')?.value || '');

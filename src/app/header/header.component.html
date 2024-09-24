@@ -1,7 +1,7 @@
 <header id="header" [class.header-scrolled]="isHeaderScrolled" class="fixed-top" [class.header-inner-pages]="isHeader">
   <div class="container d-flex align-items-center">
       <div class="logo me-auto">
-          <a href="/"><img src="assets/img/sync_logo.png" alt="sync" width="auto" height="auto"></a>
+          <a href="/"><img src="assets/img/sync_logo.png" alt="sync"  width="150" height="50" class="header_logo"></a>
       </div>
       <nav id="navbar" class="navbar" [class.navbar-mobile]="isMobile && isNavbarActive">
           <ul>
@@ -36,24 +36,24 @@
                   </a>
               </li>
               <li class="dropdown">
-                  <a>
+                  <a href="javascript:void(0);">
                       <span>{{ 'langue' | translate }}</span>
                       <i class="bi bi-chevron-down"></i>
                   </a>
                   <ul>
                       <li>
                           <a (click)="switchLanguage('en')">{{ 'english' | translate }}
-                              <img src="assets/img/Flag_of_the_United_Kingdom.png" height="20px" width="30px" alt="English Flag">
+                              <img src="assets/img/Flag_of_the_United_Kingdom.png" height="auto" width="40px" alt="English Flag">
                           </a>
                       </li>
                       <li>
                           <a (click)="switchLanguage('fr')">{{ 'french' | translate }}
-                              <img src="assets/img/Flag_of_France.png" width="30px" height="20px" alt="French Flag">
+                              <img src="assets/img/Flag_of_France.png" width="40px" height="auto" alt="French Flag">
                           </a>
                       </li>
                       <li>
                           <a (click)="switchLanguage('de')">{{ 'deutch' | translate }}
-                              <img src="assets/img/Allemand-flag.png" width="30px" height="20px" alt="Deutch Flag">
+                              <img src="assets/img/Allemand-flag.png" width="40px" height="auto" alt="Deutch Flag">
                           </a>
                       </li>
                   </ul>
@@ -62,17 +62,17 @@
               <!-- Mobile specific language options -->
               <li class="hide-in-desktop">
                   <a (click)="switchLanguage('en')">{{ 'english' | translate }}
-                      <img src="assets/img/Flag_of_the_United_Kingdom.png" width="30px" height="20px" alt="English Flag">
+                      <img src="assets/img/Flag_of_the_United_Kingdom.png" width="40px" height="auto" alt="English Flag">
                   </a>
               </li>
               <li class="hide-in-desktop">
                   <a (click)="switchLanguage('fr')">{{ 'french' | translate }}
-                      <img src="assets/img/Flag_of_France.png" width="30px" height="20px" alt="French Flag">
+                      <img src="assets/img/Flag_of_France.png" width="40px" height="auto" alt="French Flag">
                   </a>
               </li>
               <li class="hide-in-desktop">
                   <a (click)="switchLanguage('de')">{{ 'deutch' | translate }}
-                      <img src="assets/img/Allemand-flag.png" width="30px" height="20px" alt="Deutch Flag">
+                      <img src="assets/img/Allemand-flag.png" width="40px" height="auto" alt="Deutch Flag">
                   </a>
               </li>
           </ul>
@@ -86,6 +86,6 @@
           </div>
 
           <i class="bi bi-list mobile-nav-toggle" (click)="toggleNavbarClass()"></i>
-      </nav><!-- .navbar -->
+      </nav>
   </div>
 </header>
