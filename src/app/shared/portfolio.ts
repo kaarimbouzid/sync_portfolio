@@ -86,7 +86,7 @@ export const PORTFOLIOS: Portfolio[] = [
     _id: 10,
     title: 'project_title_10',
     category: 'MOBILE',
-    description: 'project_desc_9',
+    description: 'project_desc_10',
     preview: 'assets/img/portfolio/fly_prev.webp',
     image: 'assets/img/portfolio/fly.webp',
     date: '02/2024',
